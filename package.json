@@ -30,6 +30,8 @@
         "@inertiajs/inertia": "^0.8.4",
         "@inertiajs/inertia-vue": "^0.5.5",
         "@inertiajs/progress": "^0.2.4",
+        "@mdi/font": "^5.9.55",
+        "material-design-icons-iconfont": "^6.1.0",
         "vuetify": "^2.4.3"
     },
     "name": "bluejay"

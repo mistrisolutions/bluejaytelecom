@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 
 // Variables
 @import 'variables';
@@ -7,3 +8,13 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//Vuetify
+@import "~vuetify/dist/vuetify.min.css";
+
+//Icon
+@import "~@mdi/font/css/materialdesignicons.min.css";
+@import "~material-design-icons-iconfont/dist/material-design-icons.css";
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}

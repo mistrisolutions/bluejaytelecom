@@ -1,65 +1,56 @@
 <template>
-    <v-row>
-    <v-col
-      cols="6"
-      sm="4"
-    >
-      <v-img
-        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-      ></v-img>
-    </v-col>
+    <section>
+        <Carousel />
+        <!-- ./carousel -->
 
-    <v-col
-      cols="6"
-      sm="4"
-    >
-      <v-img src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
-        <div class="fill-height bottom-gradient"></div>
-      </v-img>
-    </v-col>
+        <div class="py-16">
+            <v-container>
+                <v-row class="d-flex align-center justify-center">
+                    <v-col md="5">
+                        <h2 class="mb-6">About Bluejay Telecom</h2>
+                        <p>
+                            Bluejay Telecom was founded by a group of business
+                            and telecommunication network professionals with
+                            years of industrial experience, incorporated in USA
+                            with national telecom operators and best VoIP
+                            companies around the world. Bluejay Telecom deliver
+                            the highest quality of telecommunications from
+                            voice, data, internet and mobile. We are committed
+                            to serve our customers with an uninterrupted and
+                            affordable VoIP service and utmost convenience. We
+                            have flexibility to offer innovative services to
+                            customers worldwide. We offer wholesale and retail
+                            voice termination all over the world with main focus
+                            in Asia. Our systems are modular, scalable and
+                            flexible.
+                        </p>
+                    </v-col>
+                    <v-col md="7">
+                        <v-img src="assets/img/about.png"></v-img>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </div>
+        <!-- ./about -->
 
-    <v-col
-      cols="6"
-      sm="4"
-    >
-      <v-img src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
-        <div class="fill-height repeating-gradient"></div>
-      </v-img>
-    </v-col>
-  </v-row>
+        <Card />
+        <!-- ./card -->
+    </section>
 </template>
+
 <script>
+import Carousel from "../../components/Carousel";
+import Card from "../../components/Card";
 export default {
-    metaInfo: {title: "Home"},
     layout: `frontend-layout`,
-    props: {
-       
+    components: {
+        Carousel,
+        Card
     },
-    data(){
-        return{
-
-        }
-    },
-    computed:{
-
-    },
-    methods:{
-
+    data() {
+        return {
+            
+        };
     }
-}
+};
 </script>
-<style scoped>
-  .bottom-gradient {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 72px);
-  }
-
-  .repeating-gradient {
-    background-image: repeating-linear-gradient(-45deg,
-                        rgba(255,0,0,.25),
-                        rgba(255,0,0,.25) 5px,
-                        rgba(0,0,255,.25) 5px,
-                        rgba(0,0,255,.25) 10px
-                      );
-  }
-</style>

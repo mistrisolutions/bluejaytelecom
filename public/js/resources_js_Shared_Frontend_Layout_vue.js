@@ -20,10 +20,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     AppHeader: function AppHeader() {
@@ -131,13 +127,11 @@ var render = function() {
     [
       _c("app-header"),
       _vm._v(" "),
-      _c("v-main", { staticClass: "grey lighten-4" }, [
-        _c("article", [_vm._t("default")], 2)
-      ]),
+      _vm._t("default"),
       _vm._v(" "),
       _c("AppFooter")
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []

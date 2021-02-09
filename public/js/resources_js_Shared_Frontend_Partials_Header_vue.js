@@ -45,13 +45,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: {},
   data: function data() {
-    return {};
+    return {
+      items: [{
+        title: "Home",
+        link: '/'
+      }, {
+        title: "About",
+        link: 'about'
+      }, {
+        title: "Service",
+        link: 'service'
+      }, {
+        title: "Contact",
+        link: 'contact'
+      }],
+      drawer: false,
+      group: null
+    };
   },
-  mounted: function mounted() {},
-  methods: {}
+  methods: {
+    changeLink: function changeLink(link) {
+      this.$inertia.visit(link);
+    }
+  },
+  watch: {
+    group: function group() {
+      this.drawer = false;
+    }
+  }
 });
 
 /***/ }),
@@ -146,74 +182,67 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "header" },
     [
       _c(
         "v-app-bar",
-        { attrs: { color: "deep-purple accent-4", dense: "", dark: "" } },
+        { attrs: { color: "cyan lighten-4" } },
         [
-          _c("v-app-bar-nav-icon"),
-          _vm._v(" "),
-          _c("v-toolbar-title", [_vm._v("Page title")]),
-          _vm._v(" "),
-          _c("v-spacer"),
-          _vm._v(" "),
           _c(
-            "v-btn",
-            { attrs: { icon: "" } },
-            [_c("v-icon", [_vm._v("mdi-heart")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-btn",
-            { attrs: { icon: "" } },
-            [_c("v-icon", [_vm._v("mdi-magnify")])],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-menu",
-            {
-              attrs: { left: "", bottom: "" },
-              scopedSlots: _vm._u([
-                {
-                  key: "activator",
-                  fn: function(ref) {
-                    var on = ref.on
-                    var attrs = ref.attrs
-                    return [
-                      _c(
-                        "v-btn",
-                        _vm._g(
-                          _vm._b(
-                            { attrs: { icon: "" } },
-                            "v-btn",
-                            attrs,
-                            false
-                          ),
-                          on
-                        ),
-                        [_c("v-icon", [_vm._v("mdi-dots-vertical")])],
-                        1
-                      )
-                    ]
-                  }
-                }
-              ])
-            },
+            "v-container",
             [
-              _vm._v(" "),
               _c(
-                "v-list",
-                _vm._l(5, function(n) {
-                  return _c(
-                    "v-list-item",
-                    { key: n, on: { click: function() {} } },
-                    [_c("v-list-item-title", [_vm._v("Option " + _vm._s(n))])],
+                "v-row",
+                { staticClass: "d-flex align-center" },
+                [
+                  _c("v-toolbar-title", [_vm._v("Bluejay Telecom")]),
+                  _vm._v(" "),
+                  _c("v-spacer"),
+                  _vm._v(" "),
+                  _vm._l(_vm.items, function(item, index) {
+                    return _c(
+                      "v-btn",
+                      {
+                        key: index,
+                        staticClass: "ml-3 d-none d-md-block",
+                        attrs: { plain: "", color: "gray" },
+                        on: {
+                          click: function($event) {
+                            return _vm.changeLink(item.link)
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n        " +
+                            _vm._s(item.title) +
+                            "          \n        "
+                        )
+                      ]
+                    )
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "v-btn",
+                    {
+                      staticClass: "ml-3",
+                      attrs: { outlined: "", fab: "", small: "", color: "teal" }
+                    },
+                    [_c("v-icon", [_vm._v("mdi-magnify")])],
                     1
-                  )
-                }),
-                1
+                  ),
+                  _vm._v(" "),
+                  _c("v-app-bar-nav-icon", {
+                    staticClass: "d-block d-md-none",
+                    on: {
+                      click: function($event) {
+                        $event.stopPropagation()
+                        _vm.drawer = !_vm.drawer
+                      }
+                    }
+                  })
+                ],
+                2
               )
             ],
             1

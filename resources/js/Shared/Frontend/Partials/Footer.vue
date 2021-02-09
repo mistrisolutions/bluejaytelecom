@@ -1,37 +1,47 @@
 <template>
-  <v-footer color="primary lighten-1" padless>
-    <v-row justify="center" no-gutters>
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
-      >
-        {{ link }}
-      </v-btn>
-      <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
-    </v-row>
-  </v-footer>
+  <div>
+    <div class="footer light-blue lighten-4 pt-16">
+      <v-container>
+        <v-row justify="center">
+          <v-col cols="6">
+            <h1 class="text-center">Bluejay Telecom</h1>
+          </v-col>
+        </v-row>
+        <v-row justify="center">
+          <v-col cols="12">
+            <div>
+              <v-card-text>
+                <v-row align="center" justify="center">
+                  <v-btn class="ma-2" v-for="(socail, i) in socials" :key="i">
+                    <v-icon> {{ socail }} </v-icon>
+                  </v-btn>
+                </v-row>
+              </v-card-text>
+            </div>
+          </v-col>
+        </v-row>
+        <hr class="my-10" />
+        <v-row>
+          <v-col>
+            <p class="text-center">
+              Copyright &copy; 2021 | All right reserved by Bluejay
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+  </div>
 </template>
 
 <script>
+
 export default {
-  name: "Footer",
-  data(){
+  data() {
     return {
-       links: [
-        'Home',
-        'About Us',
-        'Team',
-        'Services',
-        'Blog',
-        'Contact Us',
-      ],
-    }
-  }
+      socials: ["mdi-facebook", "mdi-twitter", "mdi-mail", "mdi-linkedin"],
+    };
+  },
+  components: {
+  },
 };
 </script>

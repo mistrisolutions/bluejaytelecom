@@ -31,13 +31,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Footer",
   data: function data() {
     return {
-      links: ['Home', 'About Us', 'Team', 'Services', 'Blog', 'Contact Us']
+      socials: ["mdi-facebook", "mdi-twitter", "mdi-mail", "mdi-linkedin"]
     };
-  }
+  },
+  components: {}
 });
 
 /***/ }),
@@ -130,43 +145,88 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-footer",
-    { attrs: { color: "primary lighten-1", padless: "" } },
-    [
-      _c(
-        "v-row",
-        { attrs: { justify: "center", "no-gutters": "" } },
-        [
-          _vm._l(_vm.links, function(link) {
-            return _c(
-              "v-btn",
-              {
-                key: link,
-                staticClass: "my-2",
-                attrs: { color: "white", text: "", rounded: "" }
-              },
-              [_vm._v("\n      " + _vm._s(link) + "\n    ")]
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "footer light-blue lighten-4 pt-16" },
+      [
+        _c(
+          "v-container",
+          [
+            _c(
+              "v-row",
+              { attrs: { justify: "center" } },
+              [
+                _c("v-col", { attrs: { cols: "6" } }, [
+                  _c("h1", { staticClass: "text-center" }, [
+                    _vm._v("Bluejay Telecom")
+                  ])
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "v-row",
+              { attrs: { justify: "center" } },
+              [
+                _c("v-col", { attrs: { cols: "12" } }, [
+                  _c(
+                    "div",
+                    [
+                      _c(
+                        "v-card-text",
+                        [
+                          _c(
+                            "v-row",
+                            { attrs: { align: "center", justify: "center" } },
+                            _vm._l(_vm.socials, function(socail, i) {
+                              return _c(
+                                "v-btn",
+                                { key: i, staticClass: "ma-2" },
+                                [
+                                  _c("v-icon", [
+                                    _vm._v(" " + _vm._s(socail) + " ")
+                                  ])
+                                ],
+                                1
+                              )
+                            }),
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c("hr", { staticClass: "my-10" }),
+            _vm._v(" "),
+            _c(
+              "v-row",
+              [
+                _c("v-col", [
+                  _c("p", { staticClass: "text-center" }, [
+                    _vm._v(
+                      "\n            Copyright © 2021 | All right reserved by Bluejay\n          "
+                    )
+                  ])
+                ])
+              ],
+              1
             )
-          }),
-          _vm._v(" "),
-          _c(
-            "v-col",
-            {
-              staticClass: "primary lighten-2 py-4 text-center white--text",
-              attrs: { cols: "12" }
-            },
-            [
-              _vm._v("\n      " + _vm._s(new Date().getFullYear()) + " — "),
-              _c("strong", [_vm._v("Vuetify")])
-            ]
-          )
-        ],
-        2
-      )
-    ],
-    1
-  )
+          ],
+          1
+        )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
