@@ -146,7 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      colors: ["cyan", "teal", "grey", "cyan", "teal", "grey"],
+      // colors: ["cyan", "teal", "grey","cyan", "teal", "grey"],
       services: [{
         icon: "mdi-semantic-web",
         service_name: "Wholesale VOIP",
@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: .95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover{\n    background-color: rgb(188, 255, 255);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -907,7 +907,7 @@ var render = function() {
                 { staticClass: "d-flex align-center justify-center" },
                 [
                   _c("v-col", { attrs: { md: "5" } }, [
-                    _c("h2", { staticClass: "mb-6" }, [
+                    _c("h2", { staticClass: "mb-6 text-h5 font-weight-bold" }, [
                       _vm._v("About Bluejay Telecom")
                     ]),
                     _vm._v(" "),
@@ -974,12 +974,8 @@ var render = function() {
             { staticClass: "justify-center text-center" },
             [
               _c("v-col", { attrs: { md: "6" } }, [
-                _c("h1", { staticClass: "mb-6" }, [_vm._v("Our Service")]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "\n                    The ultra-fast services that's right for you. We are\n                    providing different services to our clients. We are\n                    mainly focused on VOIP services primary. Now we have\n                    established a new of web development.\n                "
-                  )
+                _c("h1", { staticClass: "mb-6 section-title" }, [
+                  _vm._v("Our Service")
                 ])
               ])
             ],
@@ -993,105 +989,151 @@ var render = function() {
                 "v-col",
                 { key: i, attrs: { cols: "12", md: "6", lg: "4" } },
                 [
-                  _c(
-                    "v-card",
-                    {
-                      staticClass: "py-6",
-                      attrs: {
-                        outlined: "",
-                        "min-height": "500",
-                        color: _vm.colors[i]
-                      }
-                    },
-                    [
-                      _c(
-                        "v-list-item",
-                        [
-                          _c(
-                            "v-list-item-content",
-                            { staticClass: "text-center" },
-                            [
+                  _c("v-hover", {
+                    scopedSlots: _vm._u(
+                      [
+                        {
+                          key: "default",
+                          fn: function(ref) {
+                            var hover = ref.hover
+                            return [
                               _c(
-                                "div",
-                                { staticClass: "overline mb-4" },
-                                [
-                                  _c("v-icon", { attrs: { size: "80" } }, [
-                                    _vm._v(
-                                      "\n                                    " +
-                                        _vm._s(service.icon) +
-                                        "\n                                "
-                                    )
-                                  ])
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("v-list-item-title", { staticClass: "mb-3" }, [
-                                _c("h2", [_vm._v(_vm._s(service.service_name))])
-                              ])
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "px-5" },
-                        _vm._l(_vm.services[i].lists, function(list, i) {
-                          return _c(
-                            "v-list-item",
-                            { key: i, staticClass: "px-0" },
-                            [
-                              _c(
-                                "v-list-item-content",
+                                "v-card",
+                                {
+                                  staticClass: "py-6",
+                                  class: { "on-hover": hover },
+                                  attrs: {
+                                    elevation: hover ? 16 : 2,
+                                    outlined: "",
+                                    height: "100%"
+                                  }
+                                },
                                 [
                                   _c(
-                                    "v-row",
+                                    "v-list-item",
                                     [
                                       _c(
-                                        "v-col",
-                                        { attrs: { cols: "1" } },
+                                        "v-list-item-content",
+                                        { staticClass: "text-center" },
                                         [
                                           _c(
-                                            "v-icon",
-                                            { attrs: { color: "white" } },
+                                            "div",
+                                            { staticClass: "overline mb-4" },
                                             [
-                                              _vm._v(
-                                                "mdi-chevron-double-right\n                                        "
+                                              _c(
+                                                "v-icon",
+                                                {
+                                                  staticClass: "cyan--text",
+                                                  attrs: { size: "80" }
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    "\n                                    " +
+                                                      _vm._s(service.icon) +
+                                                      "\n                                "
+                                                  )
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "v-list-item-title",
+                                            { staticClass: "mb-3" },
+                                            [
+                                              _c(
+                                                "h2",
+                                                {
+                                                  staticClass:
+                                                    "font-weight-bold text-h5"
+                                                },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(service.service_name)
+                                                  )
+                                                ]
                                               )
                                             ]
                                           )
                                         ],
                                         1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "v-col",
-                                        { attrs: { cols: "10" } },
+                                      )
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "px-5" },
+                                    _vm._l(_vm.services[i].lists, function(
+                                      list,
+                                      i
+                                    ) {
+                                      return _c(
+                                        "v-list-item",
+                                        { key: i, staticClass: "px-0" },
                                         [
-                                          _c("v-list-item-title", [
-                                            _vm._v(_vm._s(list))
-                                          ])
+                                          _c(
+                                            "v-list-item-content",
+                                            [
+                                              _c(
+                                                "v-row",
+                                                [
+                                                  _c(
+                                                    "v-col",
+                                                    { attrs: { cols: "1" } },
+                                                    [
+                                                      _c(
+                                                        "v-icon",
+                                                        {
+                                                          attrs: {
+                                                            color: "cyan"
+                                                          }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "mdi-chevron-double-right\n                                        "
+                                                          )
+                                                        ]
+                                                      )
+                                                    ],
+                                                    1
+                                                  ),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "v-col",
+                                                    { attrs: { cols: "10" } },
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v(_vm._s(list))
+                                                      ])
+                                                    ],
+                                                    1
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            ],
+                                            1
+                                          )
                                         ],
                                         1
                                       )
-                                    ],
+                                    }),
                                     1
                                   )
                                 ],
                                 1
                               )
-                            ],
-                            1
-                          )
-                        }),
-                        1
-                      )
-                    ],
-                    1
-                  )
+                            ]
+                          }
+                        }
+                      ],
+                      null,
+                      true
+                    )
+                  })
                 ],
                 1
               )

@@ -95864,6 +95864,14 @@ var map = {
 		"./resources/js/Pages/Frontend/About.vue",
 		"resources_js_Pages_Frontend_About_vue"
 	],
+	"./Frontend/Contact": [
+		"./resources/js/Pages/Frontend/Contact.vue",
+		"resources_js_Pages_Frontend_Contact_vue"
+	],
+	"./Frontend/Contact.vue": [
+		"./resources/js/Pages/Frontend/Contact.vue",
+		"resources_js_Pages_Frontend_Contact_vue"
+	],
 	"./Frontend/Service": [
 		"./resources/js/Pages/Frontend/Service.vue",
 		"resources_js_Pages_Frontend_Service_vue"
@@ -95978,7 +95986,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"a7805c0449027187e0ec","resources_js_Pages_Frontend_Service_vue":"88b52a141ceb5db6af5f","resources_js_Pages_Frontend_Welcome_vue":"2ee5700b5ceed60a2d8d","resources_js_Shared_Frontend_Partials_Header_vue":"e06a73821e8ba96b514d","resources_js_Shared_Frontend_Partials_Footer_vue":"f9c41aa7e2cfd81525c2"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"48d998003623f8a3f2cc","resources_js_Pages_Frontend_Contact_vue":"5cb69cf8de8716c9fb8a","resources_js_Pages_Frontend_Service_vue":"bc0113bb5ee7ff95df11","resources_js_Pages_Frontend_Welcome_vue":"60afb2a935cff5e7c727","resources_js_Shared_Frontend_Partials_Header_vue":"45607f521a7cc903137f","resources_js_Shared_Frontend_Partials_Footer_vue":"cb2fbedca5b12ffd1d02"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -7,7 +7,7 @@
             <v-container>
                 <v-row class="d-flex align-center justify-center">
                     <v-col md="5">
-                        <h2 class="mb-6">About Bluejay Telecom</h2>
+                        <h2 class="mb-6 text-h5 font-weight-bold">About Bluejay Telecom</h2>
                         <p>
                             Bluejay Telecom was founded by a group of business
                             and telecommunication network professionals with

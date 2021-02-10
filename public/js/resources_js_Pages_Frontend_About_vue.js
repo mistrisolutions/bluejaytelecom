@@ -146,32 +146,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -235,6 +209,415 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.statistics .v-card.v-sheet.theme--light{\n    z-index: 10;\n}\n.statistics .v-card {\n    background-color: #21607d ;\n}\n\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./About.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+var stylesInDom = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDom.length; i++) {
+    if (stylesInDom[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var index = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3]
+    };
+
+    if (index !== -1) {
+      stylesInDom[index].references++;
+      stylesInDom[index].updater(obj);
+    } else {
+      stylesInDom.push({
+        identifier: identifier,
+        updater: addStyle(obj, options),
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+  var attributes = options.attributes || {};
+
+  if (typeof attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : 0;
+
+    if (nonce) {
+      attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(attributes).forEach(function (key) {
+    style.setAttribute(key, attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.media ? "@media ".concat(obj.media, " {").concat(obj.css, "}") : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  } else {
+    style.removeAttribute('media');
+  }
+
+  if (sourceMap && typeof btoa !== 'undefined') {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    if (Object.prototype.toString.call(newList) !== '[object Array]') {
+      return;
+    }
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDom[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDom[_index].references === 0) {
+        stylesInDom[_index].updater();
+
+        stylesInDom.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Frontend/About.vue":
 /*!***********************************************!*\
   !*** ./resources/js/Pages/Frontend/About.vue ***!
@@ -248,15 +631,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _About_vue_vue_type_template_id_4a3ecf19___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=4a3ecf19& */ "./resources/js/Pages/Frontend/About.vue?vue&type=template&id=4a3ecf19&");
 /* harmony import */ var _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Frontend/About.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _About_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./About.vue?vue&type=style&index=0&lang=css& */ "./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
   _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
   _About_vue_vue_type_template_id_4a3ecf19___WEBPACK_IMPORTED_MODULE_0__.render,
   _About_vue_vue_type_template_id_4a3ecf19___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -345,6 +730,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./About.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/About.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Frontend/About.vue?vue&type=template&id=4a3ecf19&":
 /*!******************************************************************************!*\
   !*** ./resources/js/Pages/Frontend/About.vue?vue&type=template&id=4a3ecf19& ***!
@@ -402,8 +800,9 @@ var render = function() {
         attrs: {
           header: {
             bg: "/assets/img/slider1.jpg",
-            title: "About US",
-            desc: "Build your application today!"
+            title: "About Us",
+            desc:
+              "Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. "
           }
         }
       }),
@@ -420,26 +819,42 @@ var render = function() {
                 [
                   _c(
                     "v-col",
-                    { staticClass: "text-center mb-6", attrs: { cols: "12" } },
-                    [_c("h1", [_vm._v("Company Profile")])]
+                    { staticClass: "text-center", attrs: { cols: "12" } },
+                    [
+                      _c("h1", { staticClass: "mb-10 section-title" }, [
+                        _vm._v("Company Profile")
+                      ])
+                    ]
                   ),
                   _vm._v(" "),
                   _c("v-col", [
                     _c("p", [
                       _vm._v(
-                        "\n                        Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit. Sapiente officiis qui totam modi corporis?\n                        Quasi tempora aspernatur eaque corrupti dolorum\n                        blanditiis dicta sunt non deserunt! Inventore\n                        nostrum adipisci quia excepturi veritatis quisquam\n                        deserunt impedit magnam voluptatem, nulla numquam,\n                        aperiam obcaecati optio eaque illum tempore dicta,\n                        libero maxime quae animi repudiandae. Fugit facilis\n                        architecto molestiae quis.\n                    "
+                        "\n                        Bluejay Telecom delivers the highest quality of\n                        telecommunications from voice, data, internet and\n                        mobile. We are committed to serve our customers with\n                        an uninterrupted and affordable VoIP service and\n                        utmost convenience. We have flexibility to offer\n                        innovative services to customers worldwide. We offer\n                        wholesale and retail voice termination all over the\n                        world with main focus in Asia and Africa. Our\n                        systems are modular, scalable and flexible Maxes\n                        Technologies was founded by a group of business and\n                        telecommunication network professionals with years\n                        of industrial experience, incorporated in UK with\n                        national telecom operators and best VoIP companies\n                        around the world as our partners\n                    "
                       )
                     ]),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "\n                        harum nemo dicta ea ex mollitia iste earum quo\n                        explicabo officiis itaque, fuga doloremque quia.\n                        Ipsa veniam, eveniet assumenda autem sunt placeat\n                        aut velit ut libero aspernatur voluptate quasi nemo\n                        quibusdam. Perspiciatis quo nihil, rerum animi\n                        consequuntur laudantium ab autem modi porro, aut\n                        facilis, explicabo repudiandae magnam ipsam\n                        doloribus distinctio debitis dolorum soluta! Cum ab\n                        asperiores eaque deserunt, aut iste eius corporis!\n                        Dolores, ad quae! Repellendus eum in molestiae\n                        officiis vero odit a at aspernatur magnam mollitia!\n                        Obcaecati ipsam, dolor quidem quod voluptate\n                        molestias perspiciatis quaerat nam ea ut. Obcaeca\n                    "
+                        "\n                        Bluejay Telecom delivers the highest quality of\n                        telecommunications from voice, data, internet and\n                        mobile. We are committed to serve our customers with\n                        an uninterrupted and affordable VoIP service and\n                        utmost convenience. We have flexibility to offer\n                        innovative services to customers worldwide. We offer\n                        wholesale and retail voice termination all over the\n                        world with main focus in Asia. Our systems are\n                        modular, scalable and flexible\n                    "
                       )
                     ]),
                     _vm._v(" "),
                     _c("p", [
                       _vm._v(
-                        "\n                        temporibus molestias, et maiores ipsa commodi\n                        nostrum sequi iusto fugit nam ullam nisi eligendi\n                        magni mollitia inventore, sit pariatur nemo illo\n                        tenetur tempore impedit. Porro mollitia nobis\n                        consequuntur perspiciatis voluptates dolorum sequi\n                        laboriosam ipsum soluta libero saepe, fuga\n                        consectetur suscipit aliquid ad deleniti, asperiores\n                        similique nesciunt minima autem quo odit, ex\n                        corporis. Aut corrupti, eius animi quaerat minima\n                        reiciendis adipisci aperiam doloremque atque\n                        provident? Enim quisquam, aspernatur expedita\n                        excepturi iste assumenda ut officiis qui quasi quae\n                        saepe incidunt perspiciatis possimus ab provident\n                        deleniti quod maxime magnam velit deserunt tempora?\n                        Dicta enim, optio sed dolorum dolores aspernatur ex\n                        recusandae inventore aperiam rem sunt amet natus ut\n                        distinctio minus cum delectus laudantium obcaecati\n                        accusamus saepe hic non nulla iusto eaque. Itaque\n                        neque debitis asperiores maiores voluptas nam\n                        officia error, veniam, quia laudantium non minima,\n                        numquam excepturi quisquam fugiat? Reiciendis modi\n                        non libero quae adipisci nam voluptates veniam ad,\n                        dignissimos veritatis consequatur perferendis\n                        architecto officiis id officia asperiores eos\n                        repellat distinctio provident dicta, deleniti esse\n                        hic doloremque! Dicta fugiat eligendi nam ea\n                        praesentium asperiores molestiae sunt necessitatibus\n                        modi eveniet ipsa ipsam, assumenda, at explicabo sit\n                        optio id deleniti beatae quo consectetur. Fuga\n                        impedit libero ad dolores ipsam voluptates excepturi\n                        dolor. Odit, aliquam eligendi. Nemo, corporis!\n                        Quisquam quos hic recusandae vel beatae soluta quia\n                        dolorem eveniet voluptas similique autem facere\n                        ullam voluptatum laborum quasi eligendi cupiditate,\n                        accusamus optio nulla quam? Vitae sunt facilis\n                        repellendus, soluta veniam itaque reprehenderit\n                        explicabo vel incidunt! Iure autem cumque expedita,\n                        eaque nemo cum nobis rerum necessitatibus! Ipsa\n                        natus voluptatem error nihil aut! Temporibus quia\n                        totam, architecto expedita harum accusamus autem\n                        illum porro sit eligendi corrupti veritatis quae\n                        vero dolor et mollitia quas possimus consequatur\n                        aspernatur enim debitis placeat fugit! Similique\n                        earum distinctio voluptatibus fugiat consectetur\n                        fugit facere. Temporibus tenetur placeat cumque odit\n                        suscipit vel ad atque nam. Natus error modi fuga\n                        temporibus dolores, quod mollitia quasi consectetur\n                        repellendus expedita tenetur sit dignissimos iste\n                        qui. Recusandae officiis nobis sequi accusamus\n                        repellendus illo adipisci dolore quibusdam, fugiat\n                        id quam hic nostrum laudantium commodi illum.\n                        Nesciunt, ipsam eius recusandae sapiente vitae totam\n                        magnam accusamus cumque itaque eveniet laudantium\n                        vel ad quisquam corporis delectus atque provident\n                        laboriosam commodi.\n                    "
+                        "\n                        We Invested heavily in next generation\n                        infrastructure so as to allow us to stay ahead. We\n                        have a very strong Technology and engineering focus\n                        which we nurture on a daily basis and upgrade them,\n                        as and when needed.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Bluejay Telecom with direct carriers makes us to\n                        stick on to our mission that is “to deliver quality\n                        at its best”. we are with the sole objective to run\n                        our business in VoIP traffic transition and peering\n                        service.\n                    "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                        We Invested heavily in next generation\n                        infrastructure so as to allow us to stay ahead. We\n                        have a very strong Technology and engineering focus\n                        which we nurture on a daily basis and upgrade them,\n                        as and when needed. Bluejay Telecom with direct\n                        carriers makes us to stick on to our mission that is\n                        “to deliver quality at its best”. we are with the\n                        sole objective to run our business in VoIP traffic\n                        transition and peering service.\n                    "
                       )
                     ])
                   ])
@@ -455,43 +870,83 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "py-16 grey lighten-4" },
+        { staticClass: "statistics" },
         [
           _c(
             "v-container",
             [
               _c(
-                "v-row",
+                "v-card",
+                {
+                  staticClass: "py-10 px-10",
+                  attrs: { elevation: "24", rounded: "" }
+                },
                 [
                   _c(
-                    "v-col",
-                    { staticClass: "text-center mb-10", attrs: { cols: "12" } },
-                    [_c("h1", [_vm._v("Our Statistic")])]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "12" } },
+                    "v-row",
                     [
                       _c(
-                        "v-row",
-                        { staticClass: "text-center" },
-                        _vm._l(_vm.status, function(item, i) {
-                          return _c(
-                            "v-col",
-                            { key: i, attrs: { cols: "12", sm: "6", md: "3" } },
-                            [
-                              _c("v-card", { staticClass: "py-16" }, [
-                                _c("h1", { staticClass: "mb-4" }, [
-                                  _vm._v(_vm._s(item.count))
-                                ]),
-                                _vm._v(" "),
-                                _c("p", [_vm._v(_vm._s(item.title))])
-                              ])
-                            ],
+                        "v-col",
+                        {
+                          staticClass: "text-center mb-5 white--text",
+                          attrs: { cols: "12" }
+                        },
+                        [
+                          _c("h1", { staticClass: "section-title" }, [
+                            _vm._v("Our Statistic")
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-col",
+                        { attrs: { cols: "12" } },
+                        [
+                          _c(
+                            "v-row",
+                            { staticClass: "text-center" },
+                            _vm._l(_vm.status, function(item, i) {
+                              return _c(
+                                "v-col",
+                                {
+                                  key: i,
+                                  attrs: { cols: "12", sm: "6", md: "3" }
+                                },
+                                [
+                                  _c(
+                                    "v-card",
+                                    {
+                                      staticClass: "py-10",
+                                      attrs: {
+                                        color: "white",
+                                        height: "100%",
+                                        elevation: "0",
+                                        rounded: ""
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "h1",
+                                        {
+                                          staticClass: "mb-4 font-weight-bold"
+                                        },
+                                        [_vm._v(_vm._s(item.count))]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        { staticClass: "font-weight-bold" },
+                                        [_vm._v(_vm._s(item.title))]
+                                      )
+                                    ]
+                                  )
+                                ],
+                                1
+                              )
+                            }),
                             1
                           )
-                        }),
+                        ],
                         1
                       )
                     ],
@@ -508,14 +963,19 @@ var render = function() {
       ),
       _vm._v(" "),
       _c(
-        "div",
-        { staticClass: "py-16 red lighten-4" },
+        "v-parallax",
+        {
+          staticClass: "parallax-overlay py-16 cyan darken-3",
+          staticStyle: { "margin-top": "-80px" },
+          attrs: { src: "/assets/img/bg1.jpg" }
+        },
         [
           _c(
             "v-container",
             [
               _c(
                 "v-row",
+                { staticClass: "mt-16 py-16" },
                 [
                   _c(
                     "v-col",
@@ -528,41 +988,32 @@ var render = function() {
                           _c(
                             "v-col",
                             {
-                              staticClass: "d-flex justify-center",
-                              attrs: { sm: "12", md: "5" }
-                            },
-                            [
-                              _c("img", {
-                                staticClass: "rounded-circle",
-                                attrs: {
-                                  height: "300",
-                                  width: "300",
-                                  src: "/assets/img/touch.jpg",
-                                  alt: ""
-                                }
-                              })
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            {
                               staticClass: "text-center",
-                              attrs: { sm: "12", md: "7" }
+                              attrs: { cols: "12" }
                             },
                             [
-                              _c("h1", [_vm._v("Let's Work Together")]),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "my-4" }, [
-                                _vm._v(
-                                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore doloremque quam numquam qui perferendis rerum, exercitationem nemo vitae quo."
-                                )
+                              _c("h1", { staticClass: "section-title" }, [
+                                _vm._v("Let's Work Together")
                               ]),
+                              _vm._v(" "),
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "mt-4 mb-10 white--text w-50 mx-auto"
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                We are always active on WhatsApp and Mobile Call. Be connect with us and call us anything for your query. Drop us a form in contact section.\n                            "
+                                  )
+                                ]
+                              ),
                               _vm._v(" "),
                               _c(
                                 "v-btn",
                                 {
-                                  staticClass: "py-6 px-4 white",
+                                  staticClass:
+                                    "py-6 px-4 teal lighten-1 title-1 font-weight-bold",
                                   attrs: { outlined: "" }
                                 },
                                 [_vm._v("Get In Touch")]
@@ -614,7 +1065,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "v-parallax",
-    { attrs: { dark: "", src: _vm.header.bg, height: "400" } },
+    {
+      staticClass: "parallax-overlay",
+      attrs: { dark: "", src: _vm.header.bg, height: "400" }
+    },
     [
       _c(
         "v-row",
@@ -629,7 +1083,7 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "subheading" }, [
+            _c("p", { staticClass: "title-1 white--text w-25 mx-auto" }, [
               _vm._v(
                 "\n                " +
                   _vm._s(_vm.header.desc) +

@@ -14,3 +14,7 @@ Route::get('/about',function(){
 Route::get('/service',function(){
     return Inertia::render('Frontend/Service');
 });
+
+Route::get('/contact',function(){
+    return Inertia::render('Frontend/Contact');
+});

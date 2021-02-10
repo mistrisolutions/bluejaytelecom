@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <v-app-bar color="cyan lighten-4">
+    <v-app-bar>
       <v-container>
         <v-row class="d-flex align-center">
           <v-toolbar-title>Bluejay Telecom</v-toolbar-title>
@@ -9,14 +9,13 @@
           <v-btn
             v-for="(item,index) in items"
             :key="index"
-            class="ml-3 d-none d-md-block"
+            class="ml-2 d-none d-md-block"
             plain
-            color="gray"
             @click="changeLink(item.link)"
           >
           {{ item.title }}          
           </v-btn>
-          <v-btn class="ml-3" outlined fab small color="teal">
+          <v-btn class="ml-2" outlined fab small color="teal">
             <v-icon>mdi-magnify</v-icon>
           </v-btn>
           <v-app-bar-nav-icon
@@ -83,3 +82,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.header .v-app-bar{
+  background-color: #06415d !important;
+  color: #fff !important;
+}
+.header .theme--light.v-btn .v-btn__content {
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+</style>

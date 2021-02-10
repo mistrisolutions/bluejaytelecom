@@ -3,37 +3,34 @@
         <v-container>
             <v-row class="justify-center text-center">
                 <v-col md="6">
-                    <h1 class="mb-6">Our Service</h1>
-                    <p>
-                        The ultra-fast services that's right for you. We are
-                        providing different services to our clients. We are
-                        mainly focused on VOIP services primary. Now we have
-                        established a new of web development.
-                    </p>
+                    <h1 class="mb-6 section-title">Our Service</h1>                    
                 </v-col>
             </v-row>
+
             <v-row>
-                <v-col
-                    cols="12"
+                <v-col cols="12"
                     md="6"
                     lg="4"
                     v-for="(service, i) in services"
-                    :key="i"
-                >
-                    <v-card outlined class="py-6" min-height="500" :color="colors[i]">
-                        <v-list-item>
+                    :key="i">
+                    <v-hover v-slot="{ hover }">
+                        <v-card
+                            :elevation="hover ? 16 : 2"
+                            :class="{ 'on-hover': hover }"
+                            outlined class="py-6" height="100%"
+                        >
+                            <v-list-item>
                             <v-list-item-content class="text-center">
                                 <div class="overline mb-4">
-                                    <v-icon size="80">
+                                    <v-icon size="80" class="cyan--text">
                                         {{ service.icon }}
                                     </v-icon>
                                 </div>
                                 <v-list-item-title class="mb-3">
-                                    <h2>{{ service.service_name }}</h2>
+                                    <h2 class="font-weight-bold text-h5">{{ service.service_name }}</h2>
                                 </v-list-item-title>
                             </v-list-item-content>
                         </v-list-item>
-
                         <div class="px-5">
                             <v-list-item
                                 v-for="(list, i) in services[i].lists"
@@ -43,7 +40,7 @@
                                 <v-list-item-content>
                                     <v-row>
                                         <v-col cols="1">
-                                            <v-icon color="white"
+                                            <v-icon color="cyan"
                                                 >mdi-chevron-double-right
                                             </v-icon>
                                         </v-col>
@@ -56,9 +53,12 @@
                                 </v-list-item-content>
                             </v-list-item>
                         </div>
-                    </v-card>
+                        </v-card>
+                    </v-hover>
                 </v-col>
             </v-row>
+            <!-- ./HOVER -->
+            
         </v-container>
     </section>
 </template>
@@ -66,9 +66,9 @@
 export default {
     data() {
         return {
-            colors: ["cyan", "teal", "grey","cyan", "teal", "grey"],
+            // colors: ["cyan", "teal", "grey","cyan", "teal", "grey"],
             services: [
-                {   
+                {
                     icon: "mdi-semantic-web",
                     service_name: "Wholesale VOIP",
                     lists: [
@@ -132,5 +132,13 @@ export default {
 .v-list-item__title,
 .v-list-item__subtitle {
     white-space: pre-wrap;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: .95rem;
+}
+.theme--light.v-card:hover{
+    background-color: rgb(188, 255, 255);
 }
 </style>
+
+
