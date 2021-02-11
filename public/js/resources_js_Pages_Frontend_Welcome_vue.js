@@ -53,6 +53,67 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -986,7 +1047,9 @@ var render = function() {
                 [
                   _c("v-col", { attrs: { md: "5" } }, [
                     _c("h2", { staticClass: "mb-6 text-h5 font-weight-bold" }, [
-                      _vm._v("About Bluejay Telecom")
+                      _vm._v(
+                        "\n                        About Bluejay Telecom\n                    "
+                      )
                     ]),
                     _vm._v(" "),
                     _c("p", [
@@ -1012,7 +1075,104 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("Card", { attrs: { count: 3, btn: true } })
+      _c("Card", { attrs: { count: 3, btn: true } }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "what-is-voip py-16" },
+        [
+          _c(
+            "v-container",
+            [
+              _c(
+                "v-row",
+                [
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", justify: "center" } },
+                    [
+                      _c("v-img", {
+                        staticClass: "mx-auto my-10",
+                        attrs: {
+                          src: "assets/img/phone.png",
+                          "max-height": "500",
+                          "max-width": "500"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "pr-2 pr-md-16",
+                      attrs: { cols: "12", md: "6" }
+                    },
+                    [
+                      _c(
+                        "h2",
+                        { staticClass: "mb-6 text-h5 font-weight-bold" },
+                        [
+                          _vm._v(
+                            "\n                        What is VoIP?\n                    "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                        VoIP is an acronym for Voice over Internet Protocol\n                        that describes the method to place and receive phone\n                        calls over the internet. Most people consider VoIP\n                        the alternative to the local telephone company.\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                        If you’ve heard of an IP address, that’s your\n                        Internet Protocol address. An IP address is how\n                        computers and devices communicate with each other on\n                        the internet.\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                        VoIP isn’t actually all that new. Telephony has\n                        relied on digital lines to carry phone calls since\n                        the late 90s. VoIP is a cost-effective way to handle\n                        an unlimited number of calls.\n                    "
+                        )
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    {
+                      staticClass: "pr-2 pr-md-16",
+                      attrs: { cols: "12", md: "6" }
+                    },
+                    [
+                      _c(
+                        "h2",
+                        { staticClass: "mb-6 text-h5 font-weight-bold" },
+                        [
+                          _vm._v(
+                            "\n                        What is VoIP?\n                    "
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                        VoIP phone expert is the one person who can handle\n                        all your VoIP phone system installation, support and\n                        training needs. This professional is pretty much an\n                        expert on everything pertaining to VoIP phones and\n                        calling services. VoIP or Voice over Internet\n                        Protocol calling has become almost indispensable for\n                        any company that wants to make a lasting impact as a\n                        company of the future. It is both a cost effective,\n                        as well as, far reaching way to make local, as well\n                        as, international and long distance calls. VoIP\n                        services use a high speed internet broadband\n                        connection to place calls. VoIP phone systems lend a\n                        professional and efficient touch to your business\n                        communications.\n                    "
+                        )
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
     ],
     1
   )
