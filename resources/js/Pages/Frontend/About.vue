@@ -2,7 +2,7 @@
     <section>
         <Parallax
             :header="{
-                bg: '/assets/img/slider1.jpg',
+                bg: '/assets/img/bg4.jpg',
                 title: 'About Us',
                 desc: 'Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. '
             }"
@@ -77,7 +77,7 @@
         <div class="statistics">
             <v-container>
                 <v-card
-                    elevation="24"
+                    elevation="5"
                     class="py-10 px-10"
                     rounded
                 >

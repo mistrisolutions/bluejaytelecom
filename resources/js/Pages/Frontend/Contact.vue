@@ -2,7 +2,7 @@
     <section>
         <Parallax
             :header="{
-                bg: '/assets/img/bg1.jpg',
+                bg: '/assets/img/bg5.jpg',
                 title: 'Contact Us',
                 desc: 'Please get in touch and our expert support team will answer all your questions.'
                 
@@ -13,7 +13,7 @@
             <v-container>
                 <v-row class="text-center my-10">
                     <v-col cols="12" md="6">
-                        <v-card class="pa-10 secondary" elevation="5" height="100%">
+                        <v-card class="pa-10 white" elevation="5" height="100%">
                             <v-icon icon size="50" color="teal darken-2">
                                 mdi-map-marker-outline
                             </v-icon>
@@ -21,17 +21,8 @@
                             <p class="subtitle-1">Dhaka,Bangladesh-1200</p>
                         </v-card>
                     </v-col>
-                    <!-- <v-col cols="12" md="3">
-                        <v-card class="pa-10 secondary" elevation="5">
-                            <v-icon icon size="50" color="teal darken-2">
-                                mdi-phone-in-talk-outline
-                            </v-icon>
-                            <h4 class="my-4 text-h5">Phone</h4>
-                            <p class="subtitle-1">+8801310000000</p>
-                        </v-card>
-                    </v-col> -->
                     <v-col cols="12" md="6">
-                        <v-card class="pa-10 secondary" elevation="5" height="100%">
+                        <v-card class="pa-10 white" elevation="5" height="100%">
                             <v-icon icon size="50" color="teal darken-2">
                                 mdi-email-outline
                             </v-icon>

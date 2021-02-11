@@ -57,24 +57,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       items: [{
         title: "Home",
-        link: '/'
+        link: "/"
       }, {
         title: "About",
-        link: 'about'
+        link: "about"
       }, {
         title: "Service",
-        link: 'service'
+        link: "service"
       }, {
         title: "Contact",
-        link: 'contact'
+        link: "contact"
       }],
       drawer: false,
-      group: null
+      group: null,
+      searchClosed: true,
+      search: null
     };
   },
   methods: {
@@ -108,7 +120,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header .v-app-bar{\n  background-color: #06415d !important;\n  color: #fff !important;\n}\n.header .theme--light.v-btn .v-btn__content {\n    color: #fff !important;\n    font-size: 16px;\n    font-weight: 500;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header .v-app-bar {\n    /* background-color: #06415d !important; */\n    color: #fff !important;\n}\n.header .theme--light.v-btn .v-btn__content {\n    color: #fff !important;\n    font-size: 16px;\n    font-weight: 500;\n}\n.expanding-search{\n    transition: 0.5s ease-in-out;\n}\n.expanding-search .v-input__slot {\n    margin-bottom: 0 !important;\n    cursor: pointer !important;\n}\n.expanding-search .v-input__slot:before,\n.expanding-search .v-input__slot:after {\n    border-color: transparent !important;\n}\n.expanding-search .v-input__prepend-inner {\n    margin-left: -10px;\n}\n.expanding-search .v-input__prepend-inner i{\n    color: white !important;\n}\n.expanding-search .v-text-field__details {\n    display: none;\n}\n.expanding-search.closed{\n  max-width: 45px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -609,6 +621,7 @@ var render = function() {
     [
       _c(
         "v-app-bar",
+        { attrs: { color: "primary" } },
         [
           _c(
             "v-container",
@@ -636,23 +649,41 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\n        " +
+                          "\n                    " +
                             _vm._s(item.title) +
-                            "          \n        "
+                            "\n                "
                         )
                       ]
                     )
                   }),
                   _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      staticClass: "ml-2",
-                      attrs: { outlined: "", fab: "", small: "", color: "teal" }
+                  _c("v-text-field", {
+                    staticClass: "ml-2 expanding-search d-none d-sm-block",
+                    class: { closed: _vm.searchClosed && !_vm.search },
+                    attrs: {
+                      placeholder: "Searech",
+                      "prepend-inner-icon": "mdi-magnify",
+                      filled: "",
+                      rounded: "",
+                      clearable: "",
+                      dense: ""
                     },
-                    [_c("v-icon", [_vm._v("mdi-magnify")])],
-                    1
-                  ),
+                    on: {
+                      focus: function($event) {
+                        _vm.searchClosed = false
+                      },
+                      blur: function($event) {
+                        _vm.searchClosed = true
+                      }
+                    },
+                    model: {
+                      value: _vm.search,
+                      callback: function($$v) {
+                        _vm.search = $$v
+                      },
+                      expression: "search"
+                    }
+                  }),
                   _vm._v(" "),
                   _c("v-app-bar-nav-icon", {
                     staticClass: "d-block d-md-none",
@@ -665,6 +696,65 @@ var render = function() {
                   })
                 ],
                 2
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-navigation-drawer",
+        {
+          attrs: { absolute: "", top: "", temporary: "" },
+          model: {
+            value: _vm.drawer,
+            callback: function($$v) {
+              _vm.drawer = $$v
+            },
+            expression: "drawer"
+          }
+        },
+        [
+          _c(
+            "v-list",
+            { attrs: { nav: "", dense: "" } },
+            [
+              _c(
+                "v-list-item-group",
+                {
+                  attrs: { "active-class": "cyan--text text--accent-4" },
+                  model: {
+                    value: _vm.group,
+                    callback: function($$v) {
+                      _vm.group = $$v
+                    },
+                    expression: "group"
+                  }
+                },
+                _vm._l(_vm.items, function(item, i) {
+                  return _c(
+                    "v-list-item",
+                    {
+                      key: i,
+                      on: {
+                        click: function($event) {
+                          return _vm.changeLink(item.link)
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v(_vm._s(item.title))])],
+                        1
+                      )
+                    ],
+                    1
+                  )
+                }),
+                1
               )
             ],
             1

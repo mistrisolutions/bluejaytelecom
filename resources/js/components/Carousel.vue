@@ -1,23 +1,19 @@
 <template>
-    <section>
-        <v-carousel cycle height="auto" hide-delimiter-background show-arrows>
-            <v-carousel-item v-for="(slide, i) in slides" :key="i">
-                <v-sheet :color="colors[i]">
-                    <v-container>
-                        <v-row class="d-flex align-center">
-                            <v-col md="4">
-                                <div class="pa-2" height="600px">
-                                    <v-img :src="slide.img"></v-img>
-                                </div>
-                            </v-col>
-                            <v-spacer></v-spacer>
-                            <v-col md="5">
-                                <div class="pa-2 text-center">
-                                    <h1 class="">{{ slide.title }}</h1>
-                                </div>
-                            </v-col>
-                        </v-row>
-                    </v-container>
+    <section class="header-carousel">
+        <v-carousel  hide-delimiter-background show-arrows interval="1000000" :cycle="false">
+            <v-carousel-item
+                v-for="(slide, i) in slides"
+                :key="i"
+                :src="slide.img"
+                reverse-transition="none"
+    transition="none"
+            >
+                <v-sheet height="100%" >
+                    <v-row class="fill-height" align="center" justify="center">
+                        <v-col cols="8" sm="6" class="mx-auto">
+                            <h1 class="text-center text-h6 text-sm-h4">{{ slide.title }}</h1>
+                        </v-col>
+                    </v-row>
                 </v-sheet>
             </v-carousel-item>
         </v-carousel>
@@ -34,15 +30,15 @@ export default {
             ],
             slides: [
                 {
-                    img: "assets/img/hero.png",
+                    img: "assets/img/slider1.jpg",
                     title: "We're going big for small."
                 },
                 {
-                    img: "assets/img/hero.png",
+                    img: "assets/img/slider2.jpg",
                     title: "And we’re not stopping there."
                 },
                 {
-                    img: "assets/img/hero.png",
+                    img: "assets/img/slider3.jpg",
                     title: "More ways we’ve helped businesses like yours."
                 }
             ]
@@ -50,3 +46,23 @@ export default {
     }
 };
 </script>
+
+<style>
+.header-carousel .v-carousel-{
+    height: 600px;
+}
+.header-carousel .v-responsive__sizer {
+    background: #0000007a!important;
+}
+.v-sheet.theme--dark {
+    background: transparent
+}
+@media (max-width:599px) {
+    .header-carousel .v-carousel{
+        height: 300px !important;
+    }
+    .header-carousel .v-carousel__item{
+        height: 300px !important;
+    }
+}
+</style>

@@ -3,67 +3,75 @@
         <v-container>
             <v-row class="justify-center text-center">
                 <v-col md="6">
-                    <h1 class="mb-6 section-title">Our Service</h1>                    
+                    <h1 class="mb-6 section-title">Our Service</h1>
                 </v-col>
             </v-row>
 
             <v-row>
-                <v-col cols="12"
+                <v-col
+                    cols="12"
                     md="6"
                     lg="4"
-                    v-for="(service, i) in services"
-                    :key="i">
+                    v-for="(service, i) in getServices"
+                    :key="i"
+                >
                     <v-hover v-slot="{ hover }">
                         <v-card
                             :elevation="hover ? 16 : 2"
                             :class="{ 'on-hover': hover }"
-                            outlined class="py-6" height="100%"
+                            outlined
+                            class="py-6"
+                            height="100%"
                         >
                             <v-list-item>
-                            <v-list-item-content class="text-center">
-                                <div class="overline mb-4">
-                                    <v-icon size="80" class="cyan--text">
+                                <v-list-item-content class="text-center">
+                                    <v-icon size="80" class="primary--text">
                                         {{ service.icon }}
                                     </v-icon>
-                                </div>
-                                <v-list-item-title class="mb-3">
-                                    <h2 class="font-weight-bold text-h5">{{ service.service_name }}</h2>
-                                </v-list-item-title>
-                            </v-list-item-content>
-                        </v-list-item>
-                        <div class="px-5">
-                            <v-list-item
-                                v-for="(list, i) in services[i].lists"
-                                :key="i"
-                                class="px-0"
-                            >
-                                <v-list-item-content>
-                                    <v-row>
-                                        <v-col cols="1">
-                                            <v-icon color="cyan"
-                                                >mdi-chevron-double-right
-                                            </v-icon>
-                                        </v-col>
-                                        <v-col cols="10">
-                                            <v-list-item-title>{{
-                                                list
-                                            }}</v-list-item-title>
-                                        </v-col>
-                                    </v-row>
+                                        <h2 class="font-weight-bold my-5 text-h6 text-sm-h5">
+                                            {{ service.service_name }}
+                                        </h2>
                                 </v-list-item-content>
                             </v-list-item>
-                        </div>
+                            <div class="px-5">
+                                <v-list-item
+                                    v-for="(list, i) in services[i].lists"
+                                    :key="i"
+                                    class="px-0"
+                                >
+                                    <v-list-item-content>
+                                        <v-row>
+                                            <v-col cols="1">
+                                                <v-icon color="primary"
+                                                    >mdi-chevron-double-right
+                                                </v-icon>
+                                            </v-col>
+                                            <v-col cols="10">
+                                                <v-list-item-title>{{
+                                                    list
+                                                }}</v-list-item-title>
+                                            </v-col>
+                                        </v-row>
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </div>
                         </v-card>
                     </v-hover>
                 </v-col>
+                <v-col cols="12" class="text-center mt-5" v-if="btn">
+                    <v-btn class="secondary button">See more</v-btn>
+                </v-col>
             </v-row>
             <!-- ./HOVER -->
-            
         </v-container>
     </section>
 </template>
 <script>
 export default {
+    props: {
+        count: Number,
+        btn: false
+    },
     data() {
         return {
             // colors: ["cyan", "teal", "grey","cyan", "teal", "grey"],
@@ -124,6 +132,12 @@ export default {
                 }
             ]
         };
+    },
+
+    computed: {
+        getServices() {
+            return this.services.slice(0, this.count);
+        }
     }
 };
 </script>
@@ -134,11 +148,12 @@ export default {
     white-space: pre-wrap;
     line-height: 1.5;
     font-weight: 600;
-    font-size: .95rem;
+    font-size: 0.95rem;
 }
-.theme--light.v-card:hover{
-    background-color: rgb(188, 255, 255);
+.theme--light.v-card {
+    transition: 0.5s;
+}
+.theme--light.v-card:hover {
+    background-color: rgb(246, 246, 246);
 }
 </style>
-
-

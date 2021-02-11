@@ -3006,10 +3006,14 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use((vuetify__WEBPACK_IMPORTED_MODULE_1
   theme: {
     themes: {
       light: {
-        primary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.green,
-        secondary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.grey.lighten4,
-        background: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.white,
-        error: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.red.accent3
+        primary: '#008891',
+        secondary: '#00587a',
+        background: '#0f3057',
+        error: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.red.accent3 // primary: colors.teal.darken4,
+        // secondary: colors.grey.lighten4,
+        // background: colors.white,
+        // error: colors.red.accent3,
+
       },
       dark: {
         primary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.teal.lighten2
@@ -95986,7 +95990,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"48d998003623f8a3f2cc","resources_js_Pages_Frontend_Contact_vue":"5cb69cf8de8716c9fb8a","resources_js_Pages_Frontend_Service_vue":"bc0113bb5ee7ff95df11","resources_js_Pages_Frontend_Welcome_vue":"60afb2a935cff5e7c727","resources_js_Shared_Frontend_Partials_Header_vue":"45607f521a7cc903137f","resources_js_Shared_Frontend_Partials_Footer_vue":"cb2fbedca5b12ffd1d02"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"467b9c68f55f9d81899e","resources_js_Pages_Frontend_Contact_vue":"c3221dd6b4108f32708b","resources_js_Pages_Frontend_Service_vue":"528392c8ccde0cf165d8","resources_js_Pages_Frontend_Welcome_vue":"5225ff4042a560a0a725","resources_js_Shared_Frontend_Partials_Header_vue":"d283c939b6f92dc555b4","resources_js_Shared_Frontend_Partials_Footer_vue":"a5a86e14e4f3f679d1ac"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

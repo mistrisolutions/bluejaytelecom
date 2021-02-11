@@ -2,7 +2,7 @@
     <section>
         <Parallax
             :header="{
-                bg: '/assets/img/bg1.jpg',
+                bg: '/assets/img/bg6.jpg',
                 title: 'Our Service',
                 desc:
                     'The ultra-fast services that is right for you. We are providing different services to our clients.'
@@ -30,11 +30,24 @@
                                 :key="i"
                             >
                                 <v-card
-                                    elevation="13"
-                                    class="secondary py-10 px-4"
-                                    height="100%"
+                                    elevation="5"
+                                    class="pa-5 text-center overflow-hidden"
+                                    height="260"
+                                    outlined
+                                    
                                 >
-                                    <v-row class="text-center text-sm-left">
+                                    <v-icon icon size="50" class="grey--text mb-5">
+                                        {{ card.icon }}
+                                    </v-icon>
+                                    <h3
+                                        class="mb-0 mb-sm-3 text-button text-md-subtitle-1  primary--text font-weight-bold"
+                                    >
+                                        {{ card.title }}
+                                    </h3>
+                                    <p class="text-caption text-md-overline">
+                                        {{ card.details }}
+                                    </p>
+                                    <!-- <v-row class="text-center text-sm-left">
                                         <v-col
                                             cols="12"
                                             sm="3"
@@ -59,7 +72,7 @@
                                                 {{ card.details }}
                                             </p>
                                         </v-col>
-                                    </v-row>
+                                    </v-row> -->
                                 </v-card>
                             </v-col>
                             <!-- ./single-item -->
@@ -86,9 +99,16 @@
                                 v-for="(testimonial, i) in testimonials"
                                 :key="i"
                             >
-                                <v-card class="py-10 px-5" height="100%" elevation="22">
+                                <v-card
+                                    class="py-10 px-5"
+                                    height="100%"
+                                    elevation="22"
+                                >
                                     <v-row class="d-flex align-center">
-                                        <v-col cols="4" class="text-center justify-center">
+                                        <v-col
+                                            cols="4"
+                                            class="text-center justify-center"
+                                        >
                                             <v-img
                                                 class="img-fluid rounded-circle grey lighten-2 mx-auto"
                                                 height="80"
@@ -97,7 +117,9 @@
                                             ></v-img>
                                         </v-col>
                                         <v-col cols="8">
-                                            <h4 class="text-h6 mb-0 font-weight-bold">
+                                            <h4
+                                                class="text-h6 mb-0 font-weight-bold"
+                                            >
                                                 {{ testimonial.author }}
                                             </h4>
                                             <p class="subtitle-1 mb-0">
@@ -105,7 +127,11 @@
                                             </p>
                                         </v-col>
                                     </v-row>
-                                    <v-icon icon size="50" class="grey--text lighten-3 mt-5">
+                                    <v-icon
+                                        icon
+                                        size="50"
+                                        class="grey--text lighten-3 mt-5"
+                                    >
                                         mdi-format-quote-open
                                     </v-icon>
                                     <p class="px-4">

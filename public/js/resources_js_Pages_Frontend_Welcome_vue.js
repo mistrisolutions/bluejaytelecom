@@ -143,7 +143,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: {
+    count: Number,
+    btn: false
+  },
   data: function data() {
     return {
       // colors: ["cyan", "teal", "grey","cyan", "teal", "grey"],
@@ -173,6 +181,11 @@ __webpack_require__.r(__webpack_exports__);
         lists: ["Get high-performing, speedy software applications that handles your Personal & Business operations better.", "we make software applications that are interactive and a visual treat.", "Feel free to contact us."]
       }]
     };
+  },
+  computed: {
+    getServices: function getServices() {
+      return this.services.slice(0, this.count);
+    }
   }
 });
 
@@ -210,22 +223,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       colors: ["light-blue lighten-3", "teal lighten-3", "light-blue accent-2"],
       slides: [{
-        img: "assets/img/hero.png",
+        img: "assets/img/slider1.jpg",
         title: "We're going big for small."
       }, {
-        img: "assets/img/hero.png",
+        img: "assets/img/slider2.jpg",
         title: "And we’re not stopping there."
       }, {
-        img: "assets/img/hero.png",
+        img: "assets/img/slider3.jpg",
         title: "More ways we’ve helped businesses like yours."
       }]
     };
@@ -251,7 +260,31 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: .95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover{\n    background-color: rgb(188, 255, 255);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.5s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgb(246, 246, 246);\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header-carousel .v-carousel-{\n    height: 600px;\n}\n.header-carousel .v-responsive__sizer {\n    background: #0000007a!important;\n}\n.v-sheet.theme--dark {\n    background: transparent\n}\n@media (max-width:599px) {\n.header-carousel .v-carousel{\n        height: 300px !important;\n}\n.header-carousel .v-carousel__item{\n        height: 300px !important;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -361,6 +394,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Carousel_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Carousel.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Carousel_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Carousel_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -736,15 +799,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Carousel_vue_vue_type_template_id_fe98726a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Carousel.vue?vue&type=template&id=fe98726a& */ "./resources/js/components/Carousel.vue?vue&type=template&id=fe98726a&");
 /* harmony import */ var _Carousel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Carousel.vue?vue&type=script&lang=js& */ "./resources/js/components/Carousel.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Carousel_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Carousel.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
+;
 
 
 /* normalize component */
-;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
   _Carousel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
   _Carousel_vue_vue_type_template_id_fe98726a___WEBPACK_IMPORTED_MODULE_0__.render,
   _Carousel_vue_vue_type_template_id_fe98726a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -819,6 +884,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Carousel_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Carousel.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Carousel.vue?vue&type=style&index=0&lang=css&");
 
 
 /***/ }),
@@ -934,7 +1012,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("Card")
+      _c("Card", { attrs: { count: 3, btn: true } })
     ],
     1
   )
@@ -984,161 +1062,168 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-row",
-            _vm._l(_vm.services, function(service, i) {
-              return _c(
-                "v-col",
-                { key: i, attrs: { cols: "12", md: "6", lg: "4" } },
-                [
-                  _c("v-hover", {
-                    scopedSlots: _vm._u(
-                      [
-                        {
-                          key: "default",
-                          fn: function(ref) {
-                            var hover = ref.hover
-                            return [
-                              _c(
-                                "v-card",
-                                {
-                                  staticClass: "py-6",
-                                  class: { "on-hover": hover },
-                                  attrs: {
-                                    elevation: hover ? 16 : 2,
-                                    outlined: "",
-                                    height: "100%"
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "v-list-item",
-                                    [
-                                      _c(
-                                        "v-list-item-content",
-                                        { staticClass: "text-center" },
-                                        [
-                                          _c(
-                                            "div",
-                                            { staticClass: "overline mb-4" },
-                                            [
-                                              _c(
-                                                "v-icon",
-                                                {
-                                                  staticClass: "cyan--text",
-                                                  attrs: { size: "80" }
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    "\n                                    " +
-                                                      _vm._s(service.icon) +
-                                                      "\n                                "
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "v-list-item-title",
-                                            { staticClass: "mb-3" },
-                                            [
-                                              _c(
-                                                "h2",
-                                                {
-                                                  staticClass:
-                                                    "font-weight-bold text-h5"
-                                                },
-                                                [
-                                                  _vm._v(
-                                                    _vm._s(service.service_name)
-                                                  )
-                                                ]
-                                              )
-                                            ]
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "px-5" },
-                                    _vm._l(_vm.services[i].lists, function(
-                                      list,
-                                      i
-                                    ) {
-                                      return _c(
-                                        "v-list-item",
-                                        { key: i, staticClass: "px-0" },
-                                        [
-                                          _c(
-                                            "v-list-item-content",
-                                            [
-                                              _c(
-                                                "v-row",
-                                                [
-                                                  _c(
-                                                    "v-col",
-                                                    { attrs: { cols: "1" } },
-                                                    [
-                                                      _c(
-                                                        "v-icon",
-                                                        {
-                                                          attrs: {
-                                                            color: "cyan"
-                                                          }
-                                                        },
-                                                        [
-                                                          _vm._v(
-                                                            "mdi-chevron-double-right\n                                        "
-                                                          )
-                                                        ]
-                                                      )
-                                                    ],
-                                                    1
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _c(
-                                                    "v-col",
-                                                    { attrs: { cols: "10" } },
-                                                    [
-                                                      _c("v-list-item-title", [
-                                                        _vm._v(_vm._s(list))
-                                                      ])
-                                                    ],
-                                                    1
-                                                  )
-                                                ],
-                                                1
-                                              )
-                                            ],
-                                            1
-                                          )
-                                        ],
-                                        1
-                                      )
-                                    }),
-                                    1
-                                  )
-                                ],
-                                1
-                              )
-                            ]
+            [
+              _vm._l(_vm.getServices, function(service, i) {
+                return _c(
+                  "v-col",
+                  { key: i, attrs: { cols: "12", md: "6", lg: "4" } },
+                  [
+                    _c("v-hover", {
+                      scopedSlots: _vm._u(
+                        [
+                          {
+                            key: "default",
+                            fn: function(ref) {
+                              var hover = ref.hover
+                              return [
+                                _c(
+                                  "v-card",
+                                  {
+                                    staticClass: "py-6",
+                                    class: { "on-hover": hover },
+                                    attrs: {
+                                      elevation: hover ? 16 : 2,
+                                      outlined: "",
+                                      height: "100%"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "v-list-item",
+                                      [
+                                        _c(
+                                          "v-list-item-content",
+                                          { staticClass: "text-center" },
+                                          [
+                                            _c(
+                                              "v-icon",
+                                              {
+                                                staticClass: "primary--text",
+                                                attrs: { size: "80" }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                    " +
+                                                    _vm._s(service.icon) +
+                                                    "\n                                "
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "h2",
+                                              {
+                                                staticClass:
+                                                  "font-weight-bold my-5 text-h6 text-sm-h5"
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                        " +
+                                                    _vm._s(
+                                                      service.service_name
+                                                    ) +
+                                                    "\n                                    "
+                                                )
+                                              ]
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      { staticClass: "px-5" },
+                                      _vm._l(_vm.services[i].lists, function(
+                                        list,
+                                        i
+                                      ) {
+                                        return _c(
+                                          "v-list-item",
+                                          { key: i, staticClass: "px-0" },
+                                          [
+                                            _c(
+                                              "v-list-item-content",
+                                              [
+                                                _c(
+                                                  "v-row",
+                                                  [
+                                                    _c(
+                                                      "v-col",
+                                                      { attrs: { cols: "1" } },
+                                                      [
+                                                        _c(
+                                                          "v-icon",
+                                                          {
+                                                            attrs: {
+                                                              color: "primary"
+                                                            }
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "mdi-chevron-double-right\n                                            "
+                                                            )
+                                                          ]
+                                                        )
+                                                      ],
+                                                      1
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-col",
+                                                      { attrs: { cols: "10" } },
+                                                      [
+                                                        _c(
+                                                          "v-list-item-title",
+                                                          [_vm._v(_vm._s(list))]
+                                                        )
+                                                      ],
+                                                      1
+                                                    )
+                                                  ],
+                                                  1
+                                                )
+                                              ],
+                                              1
+                                            )
+                                          ],
+                                          1
+                                        )
+                                      }),
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            }
                           }
-                        }
-                      ],
-                      null,
-                      true
-                    )
-                  })
-                ],
-                1
-              )
-            }),
-            1
+                        ],
+                        null,
+                        true
+                      )
+                    })
+                  ],
+                  1
+                )
+              }),
+              _vm._v(" "),
+              _vm.btn
+                ? _c(
+                    "v-col",
+                    { staticClass: "text-center mt-5", attrs: { cols: "12" } },
+                    [
+                      _c("v-btn", { staticClass: "secondary button" }, [
+                        _vm._v("See more")
+                      ])
+                    ],
+                    1
+                  )
+                : _vm._e()
+            ],
+            2
           )
         ],
         1
@@ -1172,54 +1257,54 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
+    { staticClass: "header-carousel" },
     [
       _c(
         "v-carousel",
         {
           attrs: {
-            cycle: "",
-            height: "auto",
             "hide-delimiter-background": "",
-            "show-arrows": ""
+            "show-arrows": "",
+            interval: "1000000",
+            cycle: false
           }
         },
         _vm._l(_vm.slides, function(slide, i) {
           return _c(
             "v-carousel-item",
-            { key: i },
+            {
+              key: i,
+              attrs: {
+                src: slide.img,
+                "reverse-transition": "none",
+                transition: "none"
+              }
+            },
             [
               _c(
                 "v-sheet",
-                { attrs: { color: _vm.colors[i] } },
+                { attrs: { height: "100%" } },
                 [
                   _c(
-                    "v-container",
+                    "v-row",
+                    {
+                      staticClass: "fill-height",
+                      attrs: { align: "center", justify: "center" }
+                    },
                     [
                       _c(
-                        "v-row",
-                        { staticClass: "d-flex align-center" },
+                        "v-col",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { cols: "8", sm: "6" }
+                        },
                         [
-                          _c("v-col", { attrs: { md: "4" } }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "pa-2",
-                                attrs: { height: "600px" }
-                              },
-                              [_c("v-img", { attrs: { src: slide.img } })],
-                              1
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("v-spacer"),
-                          _vm._v(" "),
-                          _c("v-col", { attrs: { md: "5" } }, [
-                            _c("div", { staticClass: "pa-2 text-center" }, [
-                              _c("h1", {}, [_vm._v(_vm._s(slide.title))])
-                            ])
-                          ])
-                        ],
-                        1
+                          _c(
+                            "h1",
+                            { staticClass: "text-center text-h6 text-sm-h4" },
+                            [_vm._v(_vm._s(slide.title))]
+                          )
+                        ]
                       )
                     ],
                     1

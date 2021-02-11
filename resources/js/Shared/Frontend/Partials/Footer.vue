@@ -1,49 +1,35 @@
 <template>
-    <div class="footer pt-16">
-        <v-container>
-            <v-row justify="center">
-                <v-col cols="6">
-                    <h1 class="text-center">Bluejay Telecom</h1>
-                </v-col>
-            </v-row>
-            <v-row justify="center">
-                <v-col cols="12" align="center">
-                    <v-btn
-                        class="ma-2 pa-5"
-                        v-for="(socail, i) in socials"
-                        :key="i"
-                        fab
-                    >
-                        <v-icon> {{ socail }} </v-icon>
-                    </v-btn>
-                </v-col>
-            </v-row>
-            <hr class="my-10" />
-            <v-row>
-                <v-col>
-                    <p class="text-center">
-                        Copyright &copy; 2021 | All right reserved by Bluejay
-                    </p>
-                </v-col>
-            </v-row>
-        </v-container>
-    </div>
+    <v-footer dark padless>
+        <v-card flat tile class="primary white--text text-center" width="100%">
+            <v-card-text>
+                <v-btn
+                    v-for="icon in icons"
+                    :key="icon"
+                    class="mx-4 white--text"
+                    icon
+                >
+                    <v-icon size="24px">
+                        {{ icon }}
+                    </v-icon>
+                </v-btn>
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-text class="white--text">
+                {{ new Date().getFullYear() }} — <strong>Bluejay Telecom</strong>
+            </v-card-text>
+        </v-card>
+    </v-footer>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            socials: ["mdi-facebook", "mdi-twitter", "mdi-mail", "mdi-linkedin"]
+            icons: ["mdi-facebook", "mdi-twitter", "mdi-mail", "mdi-linkedin"]
         };
     },
     components: {}
 };
 </script>
-<style>
-.footer,
-.footer * {
-    background-color: #06415d !important;
-    color: #fff !important;
-}
-</style>

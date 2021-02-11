@@ -33,7 +33,7 @@
         </div>
         <!-- ./about -->
 
-        <Card />
+        <Card :count="3" :btn="true"/>
         <!-- ./card -->
     </section>
 </template>
