@@ -6,7 +6,7 @@
                 :key="i"
                 :src="slide.img"
                 reverse-transition="none"
-    transition="none"
+                transition="none"
             >
                 <v-sheet height="100%" >
                     <v-row class="fill-height" align="center" justify="center">

@@ -1,6 +1,6 @@
 <template>
-    <div class="header">
-        <v-app-bar color="primary">
+    <div class="header" style="margin-bottom:70px">
+        <v-app-bar color="primary" fixed height="70px">
             <v-container>
                 <v-row class="d-flex align-center">
                     <v-toolbar-title>Bluejay Telecom</v-toolbar-title>
@@ -9,7 +9,7 @@
                     <v-btn
                         v-for="(item, index) in items"
                         :key="index"
-                        class="ml-2 d-none d-md-block"
+                        class="ml-0 ml-lg-2 d-none d-md-block"
                         plain
                         @click="changeLink(item.link)"
                     >
@@ -72,6 +72,10 @@ export default {
                     link: "service"
                 },
                 {
+                    title: "Features",
+                    link: "features"
+                },
+                {
                     title: "Contact",
                     link: "contact"
                 }
@@ -125,7 +129,21 @@ export default {
 .expanding-search .v-text-field__details {
     display: none;
 }
+.expanding-search {
+    max-width: 300px;
+}
 .expanding-search.closed{
   max-width: 45px;
 }
+@media (max-width:1100px) {
+.expanding-search {
+    max-width: 200px;
+}
+header .v-btn{
+    padding: 0 5px !important;
+}
+}
+
+
+
 </style>

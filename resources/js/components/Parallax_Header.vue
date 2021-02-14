@@ -27,9 +27,5 @@ export default {
 .parallax-overlay p{
   width: 50%;
 }
-@media (max-width:599px) {
-  .parallax-overlay p{
-  width: 100% !important;
-}
-}
+
 </style>

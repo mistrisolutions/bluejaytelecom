@@ -3006,7 +3006,7 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use((vuetify__WEBPACK_IMPORTED_MODULE_1
   theme: {
     themes: {
       light: {
-        primary: '#008891',
+        primary: '#0f4479',
         secondary: '#00587a',
         background: '#0f3057',
         error: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__.default.red.accent3 // primary: colors.teal.darken4,
@@ -95876,6 +95876,22 @@ var map = {
 		"./resources/js/Pages/Frontend/Contact.vue",
 		"resources_js_Pages_Frontend_Contact_vue"
 	],
+	"./Frontend/Features": [
+		"./resources/js/Pages/Frontend/Features.vue",
+		"resources_js_Pages_Frontend_Features_vue"
+	],
+	"./Frontend/Features.vue": [
+		"./resources/js/Pages/Frontend/Features.vue",
+		"resources_js_Pages_Frontend_Features_vue"
+	],
+	"./Frontend/Privecy": [
+		"./resources/js/Pages/Frontend/Privecy.vue",
+		"resources_js_Pages_Frontend_Privecy_vue"
+	],
+	"./Frontend/Privecy.vue": [
+		"./resources/js/Pages/Frontend/Privecy.vue",
+		"resources_js_Pages_Frontend_Privecy_vue"
+	],
 	"./Frontend/Service": [
 		"./resources/js/Pages/Frontend/Service.vue",
 		"resources_js_Pages_Frontend_Service_vue"
@@ -95990,7 +96006,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"467b9c68f55f9d81899e","resources_js_Pages_Frontend_Contact_vue":"c3221dd6b4108f32708b","resources_js_Pages_Frontend_Service_vue":"528392c8ccde0cf165d8","resources_js_Pages_Frontend_Welcome_vue":"190737d616ce9353997e","resources_js_Shared_Frontend_Partials_Header_vue":"d283c939b6f92dc555b4","resources_js_Shared_Frontend_Partials_Footer_vue":"a5a86e14e4f3f679d1ac"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"c019deeb326af66a59c6","resources_js_Pages_Frontend_Contact_vue":"e5ded194c4c1721ac7b9","resources_js_Pages_Frontend_Features_vue":"21604a4a9544571953a8","resources_js_Pages_Frontend_Privecy_vue":"397b96a0fe2f7d8fa140","resources_js_Pages_Frontend_Service_vue":"040d43ff8fece13817e9","resources_js_Pages_Frontend_Welcome_vue":"876f23f947994761d132","resources_js_Shared_Frontend_Partials_Header_vue":"f1ea58ddda8a3f7f2faf","resources_js_Shared_Frontend_Partials_Footer_vue":"1a2830a3637cb43bf8a1"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

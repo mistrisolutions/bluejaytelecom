@@ -1,8 +1,8 @@
-(self["webpackChunkbluejay"] = self["webpackChunkbluejay"] || []).push([["resources_js_Pages_Frontend_Contact_vue"],{
+(self["webpackChunkbluejay"] = self["webpackChunkbluejay"] || []).push([["resources_js_Pages_Frontend_Privecy_vue"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js& ***!
   \******************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -105,6 +105,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -112,12 +116,7 @@ __webpack_require__.r(__webpack_exports__);
     Parallax: _components_Parallax_Header__WEBPACK_IMPORTED_MODULE_0__.default
   },
   data: function data() {
-    return {
-      rules: [function (value) {
-        return !!value || "Please fill the input..";
-      } // value => (value && value.length >= 3) || "Please fill the input."
-      ]
-    };
+    return {};
   }
 });
 
@@ -568,9 +567,9 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Contact.vue":
+/***/ "./resources/js/Pages/Frontend/Privecy.vue":
 /*!*************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Contact.vue ***!
+  !*** ./resources/js/Pages/Frontend/Privecy.vue ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -579,8 +578,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact.vue?vue&type=template&id=8f777da8& */ "./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8&");
-/* harmony import */ var _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Contact.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Privecy.vue?vue&type=template&id=39ed8cd0& */ "./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0&");
+/* harmony import */ var _Privecy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Privecy.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -590,9 +589,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _Privecy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -602,7 +601,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Frontend/Contact.vue"
+component.options.__file = "resources/js/Pages/Frontend/Privecy.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -648,9 +647,9 @@ component.options.__file = "resources/js/components/Parallax_Header.vue"
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js&":
 /*!**************************************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js& ***!
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -659,8 +658,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Contact.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Privecy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Privecy.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Privecy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -693,19 +692,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8&":
+/***/ "./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0&":
 /*!********************************************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8& ***!
+  !*** ./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0& ***!
   \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_8f777da8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Contact.vue?vue&type=template&id=8f777da8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Privecy_vue_vue_type_template_id_39ed8cd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Privecy.vue?vue&type=template&id=39ed8cd0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0&");
 
 
 /***/ }),
@@ -727,9 +726,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Contact.vue?vue&type=template&id=8f777da8& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Privecy.vue?vue&type=template&id=39ed8cd0& ***!
   \***********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -749,200 +748,42 @@ var render = function() {
       _c("Parallax", {
         attrs: {
           header: {
-            bg: "/assets/img/bg5.jpg",
-            title: "Contact Us",
+            bg: "/assets/img/bg4.jpg",
+            title: "Privecy Policy",
             desc:
-              "Please get in touch and our expert support team will answer all your questions."
+              "Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. "
           }
         }
       }),
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "py-10" },
+        { staticClass: "privecy py-10" },
         [
           _c(
             "v-container",
             [
               _c(
                 "v-row",
-                { staticClass: "text-center my-10" },
                 [
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "12", md: "6" } },
-                    [
-                      _c(
-                        "v-card",
-                        {
-                          staticClass: "pa-10 white",
-                          attrs: { elevation: "5", height: "100%" }
-                        },
-                        [
-                          _c(
-                            "v-icon",
-                            {
-                              attrs: {
-                                icon: "",
-                                size: "50",
-                                color: "teal darken-2"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            mdi-map-marker-outline\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "my-4 text-h5" }, [
-                            _vm._v("Office-address")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle-1" }, [
-                            _vm._v("Dhaka,Bangladesh-1200")
-                          ])
-                        ],
-                        1
+                  _c("v-col", { attrs: { cols: "12" } }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor sit amet consectetur, adipisicing\n                        elit. Explicabo quod cumque eum non dignissimos in\n                        eaque cupiditate voluptatum dolor soluta. Beatae\n                        recusandae temporibus nostrum similique incidunt non\n                        odio deleniti, ipsam consequuntur, ducimus aliquam\n                        enim porro optio in animi obcaecati hic unde\n                        reiciendis voluptate suscipit quis, necessitatibus\n                        magni repellat! Officia culpa vel, voluptate\n                        corrupti voluptates fuga harum quis, provident, quas\n                        neque aliquam exercitationem deleniti voluptatem\n                        repellendus. Saepe minima distinctio incidunt\n                        cupiditate laudantium est tempora repellat sint\n                        possimus odio quo a numquam necessitatibus vitae\n                        officiis nulla maiores eius error fugiat neque dicta\n                        totam, fuga minus? Dolorum fugiat amet accusantium\n                        fuga praesentium quae harum exercitationem repellat!\n                        Itaque accusantium iste cumque tempore dicta\n                        corrupti animi accusamus! Quo veniam officia facilis\n                        corrupti quos qui illum accusantium vitae dolorem,\n                        minus ab maxime aliquam sit earum ex consequatur\n                        cumque blanditiis voluptatibus, maiores porro dicta.\n                        Aperiam quia temporibus vitae assumenda hic,\n                        sapiente, fuga illo asperiores explicabo eos\n                        quisquam corrupti voluptas. Deserunt illo voluptatum\n                        inventore in maxime. Porro culpa dicta architecto id\n                        cum eius doloremque laborum, sed beatae odit ratione\n                        nesciunt ex ipsam sit explicabo dolores atque\n                        maiores eaque neque, facilis ea? Praesentium culpa\n                        voluptates at, dolores esse provident voluptate\n                        exercitationem. Fuga dolor error dolores inventore,\n                        nihil nobis dolorum.\n                    "
                       )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-col",
-                    { attrs: { cols: "12", md: "6" } },
-                    [
-                      _c(
-                        "v-card",
-                        {
-                          staticClass: "pa-10 white",
-                          attrs: { elevation: "5", height: "100%" }
-                        },
-                        [
-                          _c(
-                            "v-icon",
-                            {
-                              attrs: {
-                                icon: "",
-                                size: "50",
-                                color: "teal darken-2"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            mdi-email-outline\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("h4", { staticClass: "my-4 text-h5" }, [
-                            _vm._v("Mail")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle-1" }, [
-                            _vm._v("sales@bluejaytelecom.com")
-                          ]),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle-1" }, [
-                            _vm._v("info@bluejaytelecom.com")
-                          ])
-                        ],
-                        1
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor sit, amet consectetur adipisicing\n                        elit. Iste saepe doloribus vitae nesciunt vel?\n                        Facere quam impedit, aut ab fuga nihil corrupti amet\n                        expedita nesciunt ea ratione? Reprehenderit qui, sed\n                        magni nam aliquam cumque culpa doloremque illo! Sint\n                        cupiditate nostrum, reprehenderit ullam, incidunt\n                        natus magnam id necessitatibus aut atque alias rerum\n                        similique saepe fuga eaque nobis provident officia\n                        nam. Facere hic iste ducimus repellendus maiores\n                        incidunt nihil soluta quasi aut, provident\n                        consectetur dicta dolores aliquid porro eos ratione\n                        quo consequuntur odit optio quis pariatur,\n                        repudiandae a doloribus. Fugit laudantium laborum\n                        quam repellat nam quis. Vero voluptatem totam\n                        deserunt, corrupti voluptates voluptas in ut\n                        dolores. Beatae doloremque sequi labore itaque\n                        eveniet! Aut fuga, voluptates quam suscipit iste\n                        labore illum. Vero eveniet magnam ratione minus\n                        sapiente, enim nisi, accusamus amet praesentium\n                        totam, aspernatur ex exercitationem excepturi quia\n                        corrupti quae voluptatum saepe rem sint odio tempora\n                        laborum. Delectus sint veritatis cum repellat qui.\n                    "
                       )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-row",
-                { staticClass: "mb-10" },
-                [
-                  _c("v-col", { attrs: { cols: "12", md: "6" } }, [
-                    _c("iframe", {
-                      staticStyle: { border: "0" },
-                      attrs: {
-                        src:
-                          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116834.1510012592!2d90.3491144146427!3d23.780620575946145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1612942905394!5m2!1sen!2sbd",
-                        width: "100%",
-                        height: "450",
-                        frameborder: "0",
-                        allowfullscreen: "",
-                        "aria-hidden": "false",
-                        tabindex: "0"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("v-col", { attrs: { cols: "12", md: "6" } }, [
-                    _c(
-                      "div",
-                      [
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Your name (required)",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Your email (required)",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Subject",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-textarea", {
-                          attrs: {
-                            label: "Message",
-                            "auto-grow": "",
-                            outlined: "",
-                            rows: "1",
-                            "row-height": "100"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mx-auto d-flex justify-center" },
-                          [
-                            _c(
-                              "v-btn",
-                              {
-                                staticClass: "white--text text-button",
-                                attrs: { color: "teal darken-4" }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                            Submit\n                        "
-                                )
-                              ]
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor, sit amet consectetur adipisicing\n                        elit. Assumenda id autem maiores, tempore, eum\n                        necessitatibus inventore ipsam minima saepe\n                        voluptatibus labore officia? Ipsam nam molestiae quo\n                        veritatis a commodi recusandae nesciunt quia vel\n                        eligendi earum iusto, facere vitae necessitatibus\n                        nostrum tempora labore aliquid qui quisquam incidunt\n                        fugit! Modi est quasi asperiores libero quod\n                        consequuntur dolorum provident sunt, qui, nostrum\n                        totam incidunt ullam consequatur doloremque numquam\n                        eum veritatis similique distinctio, dicta sint\n                        inventore quibusdam eius. Aut architecto ipsam ipsum\n                        ducimus et commodi itaque, eius assumenda quasi\n                        inventore repellendus sunt minus maiores facilis\n                        perspiciatis illum nulla! Nemo ea temporibus libero\n                        neque amet.\n                    "
+                      )
+                    ])
                   ])
                 ],
                 1

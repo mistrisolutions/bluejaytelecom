@@ -15,6 +15,14 @@ Route::get('/service',function(){
     return Inertia::render('Frontend/Service');
 });
 
+Route::get('/features',function(){
+    return Inertia::render('Frontend/Features');
+});
+
 Route::get('/contact',function(){
     return Inertia::render('Frontend/Contact');
+});
+
+Route::get('/privecy',function(){
+    return Inertia::render('Frontend/Privecy');
 });

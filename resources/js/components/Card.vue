@@ -151,9 +151,9 @@ export default {
     font-size: 0.95rem;
 }
 .theme--light.v-card {
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .theme--light.v-card:hover {
-    background-color: rgb(246, 246, 246);
+    background-color: rgba(246, 246, 246, 0.685);
 }
 </style>
