@@ -2,7 +2,7 @@
     <section>
         <Parallax
             :header="{
-                bg: '/assets/img/bg4.jpg',
+                bg: '/assets/img/bg2.jpg',
                 title: 'Our Features',
                 desc:
                     'Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. '

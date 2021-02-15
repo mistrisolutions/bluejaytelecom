@@ -4,8 +4,8 @@
             :header="{
                 bg: '/assets/img/bg5.jpg',
                 title: 'Contact Us',
-                desc: 'Please get in touch and our expert support team will answer all your questions.'
-                
+                desc:
+                    'Please get in touch and our expert support team will answer all your questions.'
             }"
         />
         <!-- ./parallax -->
@@ -18,7 +18,10 @@
                                 mdi-map-marker-outline
                             </v-icon>
                             <h4 class="my-4 text-h5">Office-address</h4>
-                            <p class="subtitle-1">Dhaka,Bangladesh-1200</p>
+                            <p class="subtitle-1">
+                                1309 Coffeen Avenue STE 1200 Sheridan, WY 82801
+                                USA
+                            </p>
                         </v-card>
                     </v-col>
                     <v-col cols="12" md="6">
@@ -77,11 +80,11 @@
                             ></v-textarea>
                             <div class="mx-auto d-flex justify-center">
                                 <v-btn
-                                class="white--text text-button"
-                                color="teal darken-4"
-                            >
-                                Submit
-                            </v-btn>
+                                    class="white--text text-button"
+                                    color="teal darken-4"
+                                >
+                                    Submit
+                                </v-btn>
                             </div>
                         </div>
                     </v-col>

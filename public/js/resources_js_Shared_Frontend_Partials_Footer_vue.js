@@ -59,7 +59,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -629,21 +628,45 @@ var render = function() {
                 _c("h3", [_vm._v("General")]),
                 _vm._v(" "),
                 _c("ul", { staticClass: "pl-0" }, [
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("About")])
-                  ]),
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/about" } }, [
+                        _vm._v("About")
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Services")])
-                  ]),
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/service" } }, [
+                        _vm._v("Service")
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Features")])
-                  ]),
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/features" } }, [
+                        _vm._v("Features")
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Contact Us")])
-                  ])
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/contact" } }, [
+                        _vm._v("Contact Us")
+                      ])
+                    ],
+                    1
+                  )
                 ])
               ]),
               _vm._v(" "),
@@ -651,25 +674,35 @@ var render = function() {
                 _c("h3", [_vm._v("Legal")]),
                 _vm._v(" "),
                 _c("ul", { staticClass: "pl-0" }, [
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Licenses")])
-                  ]),
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/licenses" } }, [
+                        _vm._v("Licenses")
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "$inertia.visit('privecy')" } }, [
-                      _vm._v("Privacy Policy")
-                    ])
-                  ]),
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/privecy" } }, [
+                        _vm._v("Privacy Policy")
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [_vm._v("Features")])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Terms of Service")
-                    ])
-                  ])
+                  _c(
+                    "li",
+                    [
+                      _c("inertia-link", { attrs: { href: "/terms" } }, [
+                        _vm._v("Terms of Service")
+                      ])
+                    ],
+                    1
+                  )
                 ])
               ])
             ],

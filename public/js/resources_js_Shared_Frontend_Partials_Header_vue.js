@@ -67,6 +67,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -633,7 +637,19 @@ var render = function() {
                 "v-row",
                 { staticClass: "d-flex align-center" },
                 [
-                  _c("v-toolbar-title", [_vm._v("Bluejay Telecom")]),
+                  _c(
+                    "v-toolbar-title",
+                    [
+                      _c("inertia-link", { attrs: { href: "/" } }, [
+                        _c("img", {
+                          staticClass: "img-fluid",
+                          staticStyle: { height: "50px" },
+                          attrs: { src: "assets/logo.svg", alt: "" }
+                        })
+                      ])
+                    ],
+                    1
+                  ),
                   _vm._v(" "),
                   _c("v-spacer"),
                   _vm._v(" "),

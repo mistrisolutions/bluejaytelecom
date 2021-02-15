@@ -59,7 +59,7 @@
                     </v-hover>
                 </v-col>
                 <v-col cols="12" class="text-center mt-5" v-if="btn">
-                    <v-btn class="secondary button">See more</v-btn>
+                    <v-btn class="secondary button seemoreBtn"><inertia-link href="/service">See more</inertia-link></v-btn>
                 </v-col>
             </v-row>
             <!-- ./HOVER -->
@@ -156,4 +156,10 @@ export default {
 .theme--light.v-card:hover {
     background-color: rgba(246, 246, 246, 0.685);
 }
+
+.v-application .seemoreBtn a {
+    color: #ffffff!important;
+    text-decoration: none !important;
+}
+
 </style>

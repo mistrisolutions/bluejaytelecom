@@ -3,7 +3,11 @@
         <v-app-bar color="primary" fixed height="70px">
             <v-container>
                 <v-row class="d-flex align-center">
-                    <v-toolbar-title>Bluejay Telecom</v-toolbar-title>
+                    <v-toolbar-title>
+                        <inertia-link href="/">
+                            <img class="img-fluid" style="height:50px" src="assets/logo.svg" alt="">
+                        </inertia-link>
+                    </v-toolbar-title>
 
                     <v-spacer></v-spacer>
                     <v-btn

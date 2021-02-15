@@ -1,8 +1,8 @@
-(self["webpackChunkbluejay"] = self["webpackChunkbluejay"] || []).push([["resources_js_Pages_Frontend_Features_vue"],{
+(self["webpackChunkbluejay"] = self["webpackChunkbluejay"] || []).push([["resources_js_Pages_Frontend_Licenses_vue"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -12,8 +12,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_Parallax_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/Parallax_Header */ "./resources/js/components/Parallax_Header.vue");
-//
-//
 //
 //
 //
@@ -160,30 +158,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.features {\n    position: relative;\n}\n.features-section {\n    height: 600px;\n    position: relative;\n}\n.features-bg {\n    background-size: cover;\n    background-repeat: no-repeat;\n    height: 100%;\n    width: 50%;\n    top: 0;\n    margin-left: auto;\n    position: absolute;\n}\n.bg-right {\n    background-image: url(\"/assets/img/features1.jpg\");\n    right: 0;\n}\n.bg-left {\n    background-image: url(\"/assets/img/features2.jpg\");\n    left: 0;\n}\n@media (max-width: 767px) {\n.features-section {\n        height: 100%;\n}\n.features-bg {\n       display: none;\n}\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Parallax_Header.vue?vue&type=style&index=0&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Parallax_Header.vue?vue&type=style&index=0&lang=css& ***!
@@ -281,36 +255,6 @@ module.exports = function (cssWithMappingToString) {
 
   return list;
 };
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Features.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -623,9 +567,9 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Features.vue":
+/***/ "./resources/js/Pages/Frontend/Licenses.vue":
 /*!**************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Features.vue ***!
+  !*** ./resources/js/Pages/Frontend/Licenses.vue ***!
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -634,22 +578,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Features.vue?vue&type=template&id=4fd70461& */ "./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461&");
-/* harmony import */ var _Features_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Features.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Features_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Features.vue?vue&type=style&index=0&lang=css& */ "./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Licenses.vue?vue&type=template&id=67e211f6& */ "./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6&");
+/* harmony import */ var _Licenses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Licenses.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-;
 
 
 /* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
-  _Features_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _Licenses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -659,7 +601,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Frontend/Features.vue"
+component.options.__file = "resources/js/Pages/Frontend/Licenses.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -705,9 +647,9 @@ component.options.__file = "resources/js/components/Parallax_Header.vue"
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js&":
 /*!***************************************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js& ***!
   \***************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -716,8 +658,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Features.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Licenses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Licenses.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Licenses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -737,19 +679,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css& ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Features.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=style&index=0&lang=css&");
-
-
-/***/ }),
-
 /***/ "./resources/js/components/Parallax_Header.vue?vue&type=style&index=0&lang=css&":
 /*!**************************************************************************************!*\
   !*** ./resources/js/components/Parallax_Header.vue?vue&type=style&index=0&lang=css& ***!
@@ -763,19 +692,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461&":
+/***/ "./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6&":
 /*!*********************************************************************************!*\
-  !*** ./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461& ***!
+  !*** ./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6& ***!
   \*********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Features_vue_vue_type_template_id_4fd70461___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Features.vue?vue&type=template&id=4fd70461& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Licenses_vue_vue_type_template_id_67e211f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Licenses.vue?vue&type=template&id=67e211f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6&");
 
 
 /***/ }),
@@ -797,9 +726,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6&":
 /*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Features.vue?vue&type=template&id=4fd70461& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Frontend/Licenses.vue?vue&type=template&id=67e211f6& ***!
   \************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -819,223 +748,52 @@ var render = function() {
       _c("Parallax", {
         attrs: {
           header: {
-            bg: "/assets/img/bg2.jpg",
-            title: "Our Features",
+            bg: "/assets/img/bg4.jpg",
+            title: "Licenses",
             desc:
               "Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. "
           }
         }
       }),
       _vm._v(" "),
-      _c("div", { staticClass: "features" }, [
-        _c(
-          "section",
-          { staticClass: "features-section d-flex align-center" },
-          [
-            _c(
-              "v-container",
-              [
-                _c(
-                  "v-row",
-                  [
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "text-justify px-10",
-                        attrs: { cols: "12", md: "6" }
-                      },
-                      [
-                        _c("h2", [_vm._v("quality")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                            Being a quality conscious organization,\n                            DeshiCall takes maximum care to maintain its\n                            quality standard. Along with unmatched voice\n                            quality, DeshiCall assures best retail VoIP\n                            termination services. Frequent quality\n                            monitoring is done to ensure that the services\n                            are at par with the international standard.\n                        "
-                          )
-                        ])
-                      ]
-                    ),
+      _c(
+        "div",
+        { staticClass: "privecy py-10" },
+        [
+          _c(
+            "v-container",
+            [
+              _c(
+                "v-row",
+                [
+                  _c("v-col", { attrs: { cols: "12" } }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor sit amet consectetur, adipisicing\n                        elit. Explicabo quod cumque eum non dignissimos in\n                        eaque cupiditate voluptatum dolor soluta. Beatae\n                        recusandae temporibus nostrum similique incidunt non\n                        odio deleniti, ipsam consequuntur, ducimus aliquam\n                        enim porro optio in animi obcaecati hic unde\n                        reiciendis voluptate suscipit quis, necessitatibus\n                        magni repellat! Officia culpa vel, voluptate\n                        corrupti voluptates fuga harum quis, provident, quas\n                        neque aliquam exercitationem deleniti voluptatem\n                        repellendus. Saepe minima distinctio incidunt\n                        cupiditate laudantium est tempora repellat sint\n                        possimus odio quo a numquam necessitatibus vitae\n                        officiis nulla maiores eius error fugiat neque dicta\n                        totam, fuga minus? Dolorum fugiat amet accusantium\n                        fuga praesentium quae harum exercitationem repellat!\n                        Itaque accusantium iste cumque tempore dicta\n                        corrupti animi accusamus! Quo veniam officia facilis\n                        corrupti quos qui illum accusantium vitae dolorem,\n                        minus ab maxime aliquam sit earum ex consequatur\n                        cumque blanditiis voluptatibus, maiores porro dicta.\n                        Aperiam quia temporibus vitae assumenda hic,\n                        sapiente, fuga illo asperiores explicabo eos\n                        quisquam corrupti voluptas. Deserunt illo voluptatum\n                        inventore in maxime. Porro culpa dicta architecto id\n                        cum eius doloremque laborum, sed beatae odit ratione\n                        nesciunt ex ipsam sit explicabo dolores atque\n                        maiores eaque neque, facilis ea? Praesentium culpa\n                        voluptates at, dolores esse provident voluptate\n                        exercitationem. Fuga dolor error dolores inventore,\n                        nihil nobis dolorum.\n                    "
+                      )
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "d-block d-sm-none",
-                        attrs: { cols: "12" }
-                      },
-                      [
-                        _c("v-img", {
-                          attrs: { src: "/assets/img/features1.jpg" }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "features-bg bg-right" })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "section",
-          { staticClass: "features-section d-flex align-center" },
-          [
-            _c(
-              "v-container",
-              [
-                _c("div", { staticClass: "features-bg bg-left" }),
-                _vm._v(" "),
-                _c(
-                  "v-row",
-                  [
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "text-justify px-10",
-                        attrs: { cols: "12", md: "6", "offset-md": "6" }
-                      },
-                      [
-                        _c("h2", [_vm._v("Network Quality")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                            With DeshiCall , customers can expect excellent network quality and crystal clear voice. Compatible with several protocols such as SIP and G729, DeshiCall network assures uninterrupted calling experience irrespective of any type of protocol. Furthermore, the network is constantly checked to maintain the quality of services.\n                        "
-                          )
-                        ])
-                      ]
-                    ),
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor sit, amet consectetur adipisicing\n                        elit. Iste saepe doloribus vitae nesciunt vel?\n                        Facere quam impedit, aut ab fuga nihil corrupti amet\n                        expedita nesciunt ea ratione? Reprehenderit qui, sed\n                        magni nam aliquam cumque culpa doloremque illo! Sint\n                        cupiditate nostrum, reprehenderit ullam, incidunt\n                        natus magnam id necessitatibus aut atque alias rerum\n                        similique saepe fuga eaque nobis provident officia\n                        nam. Facere hic iste ducimus repellendus maiores\n                        incidunt nihil soluta quasi aut, provident\n                        consectetur dicta dolores aliquid porro eos ratione\n                        quo consequuntur odit optio quis pariatur,\n                        repudiandae a doloribus. Fugit laudantium laborum\n                        quam repellat nam quis. Vero voluptatem totam\n                        deserunt, corrupti voluptates voluptas in ut\n                        dolores. Beatae doloremque sequi labore itaque\n                        eveniet! Aut fuga, voluptates quam suscipit iste\n                        labore illum. Vero eveniet magnam ratione minus\n                        sapiente, enim nisi, accusamus amet praesentium\n                        totam, aspernatur ex exercitationem excepturi quia\n                        corrupti quae voluptatum saepe rem sint odio tempora\n                        laborum. Delectus sint veritatis cum repellat qui.\n                    "
+                      )
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "d-block d-sm-none",
-                        attrs: { cols: "12" }
-                      },
-                      [
-                        _c("v-img", {
-                          attrs: { src: "/assets/img/features2.jpg" }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "section",
-          { staticClass: "features-section d-flex align-center" },
-          [
-            _c(
-              "v-container",
-              [
-                _c(
-                  "v-row",
-                  [
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "text-justify px-10",
-                        attrs: { cols: "12", md: "6" }
-                      },
-                      [
-                        _c("h2", [_vm._v("Compatibility")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                            DeshiCall has a versatile structure, which can support a huge range of mobile handsets and call origination devices like PC's for call termination.\n                        "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "d-block d-sm-none",
-                        attrs: { cols: "12" }
-                      },
-                      [
-                        _c("v-img", {
-                          attrs: { src: "/assets/img/features1.jpg" }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "features-bg bg-right" })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "section",
-          { staticClass: "features-section d-flex align-center" },
-          [
-            _c(
-              "v-container",
-              [
-                _c("div", { staticClass: "features-bg bg-left" }),
-                _vm._v(" "),
-                _c(
-                  "v-row",
-                  [
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "text-justify px-10",
-                        attrs: { cols: "12", md: "6", "offset-md": "6" }
-                      },
-                      [
-                        _c("h2", [_vm._v("Impeccable After Sales Support")]),
-                        _vm._v(" "),
-                        _c("p", [
-                          _vm._v(
-                            "\n                           DeshiCall provides 24X7 support to its clients in the form of online troubleshooting And Whatsapp . Any kind of clients issues are addressed by the technical support team and resolved within the stipulated period of time. Hence, due to the prompt after sales support, DeshiCall is able to offer reliable VoIP Termination Services.\n                        "
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "v-col",
-                      {
-                        staticClass: "d-block d-sm-none",
-                        attrs: { cols: "12" }
-                      },
-                      [
-                        _c("v-img", {
-                          attrs: { src: "/assets/img/features2.jpg" }
-                        })
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
-      ])
+                    _c("p", [
+                      _vm._v(
+                        "\n                        Lorem ipsum dolor, sit amet consectetur adipisicing\n                        elit. Assumenda id autem maiores, tempore, eum\n                        necessitatibus inventore ipsam minima saepe\n                        voluptatibus labore officia? Ipsam nam molestiae quo\n                        veritatis a commodi recusandae nesciunt quia vel\n                        eligendi earum iusto, facere vitae necessitatibus\n                        nostrum tempora labore aliquid qui quisquam incidunt\n                        fugit! Modi est quasi asperiores libero quod\n                        consequuntur dolorum provident sunt, qui, nostrum\n                        totam incidunt ullam consequatur doloremque numquam\n                        eum veritatis similique distinctio, dicta sint\n                        inventore quibusdam eius. Aut architecto ipsam ipsum\n                        ducimus et commodi itaque, eius assumenda quasi\n                        inventore repellendus sunt minus maiores facilis\n                        perspiciatis illum nulla! Nemo ea temporibus libero\n                        neque amet.\n                    "
+                      )
+                    ])
+                  ])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
     ],
     1
   )

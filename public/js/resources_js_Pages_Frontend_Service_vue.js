@@ -420,7 +420,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n.v-application .seemoreBtn a[data-v-b9bc2c0a] {\n    color: #ffffff!important;\n    text-decoration: none !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1638,9 +1638,16 @@ var render = function() {
                     "v-col",
                     { staticClass: "text-center mt-5", attrs: { cols: "12" } },
                     [
-                      _c("v-btn", { staticClass: "secondary button" }, [
-                        _vm._v("See more")
-                      ])
+                      _c(
+                        "v-btn",
+                        { staticClass: "secondary button seemoreBtn" },
+                        [
+                          _c("inertia-link", { attrs: { href: "/service" } }, [
+                            _vm._v("See more")
+                          ])
+                        ],
+                        1
+                      )
                     ],
                     1
                   )

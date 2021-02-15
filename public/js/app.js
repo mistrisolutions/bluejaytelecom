@@ -95884,6 +95884,14 @@ var map = {
 		"./resources/js/Pages/Frontend/Features.vue",
 		"resources_js_Pages_Frontend_Features_vue"
 	],
+	"./Frontend/Licenses": [
+		"./resources/js/Pages/Frontend/Licenses.vue",
+		"resources_js_Pages_Frontend_Licenses_vue"
+	],
+	"./Frontend/Licenses.vue": [
+		"./resources/js/Pages/Frontend/Licenses.vue",
+		"resources_js_Pages_Frontend_Licenses_vue"
+	],
 	"./Frontend/Privecy": [
 		"./resources/js/Pages/Frontend/Privecy.vue",
 		"resources_js_Pages_Frontend_Privecy_vue"
@@ -95899,6 +95907,14 @@ var map = {
 	"./Frontend/Service.vue": [
 		"./resources/js/Pages/Frontend/Service.vue",
 		"resources_js_Pages_Frontend_Service_vue"
+	],
+	"./Frontend/Terms": [
+		"./resources/js/Pages/Frontend/Terms.vue",
+		"resources_js_Pages_Frontend_Terms_vue"
+	],
+	"./Frontend/Terms.vue": [
+		"./resources/js/Pages/Frontend/Terms.vue",
+		"resources_js_Pages_Frontend_Terms_vue"
 	],
 	"./Frontend/Welcome": [
 		"./resources/js/Pages/Frontend/Welcome.vue",
@@ -96006,7 +96022,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"c019deeb326af66a59c6","resources_js_Pages_Frontend_Contact_vue":"e5ded194c4c1721ac7b9","resources_js_Pages_Frontend_Features_vue":"21604a4a9544571953a8","resources_js_Pages_Frontend_Privecy_vue":"397b96a0fe2f7d8fa140","resources_js_Pages_Frontend_Service_vue":"040d43ff8fece13817e9","resources_js_Pages_Frontend_Welcome_vue":"876f23f947994761d132","resources_js_Shared_Frontend_Partials_Header_vue":"f1ea58ddda8a3f7f2faf","resources_js_Shared_Frontend_Partials_Footer_vue":"1a2830a3637cb43bf8a1"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Shared_Frontend_Layout_vue":"b96b16452c5e996f21c1","resources_js_Pages_Frontend_About_vue":"c019deeb326af66a59c6","resources_js_Pages_Frontend_Contact_vue":"88279c1f00a42ca53504","resources_js_Pages_Frontend_Features_vue":"e3844ad43caa96b4d17a","resources_js_Pages_Frontend_Licenses_vue":"a3d2215bc8ed60efaa1f","resources_js_Pages_Frontend_Privecy_vue":"d29b5de426eab80cf216","resources_js_Pages_Frontend_Service_vue":"3a6953b088d9be530f07","resources_js_Pages_Frontend_Terms_vue":"abe8f46590d588c28022","resources_js_Pages_Frontend_Welcome_vue":"fc9dc04fd11ee4c7909f","resources_js_Shared_Frontend_Partials_Header_vue":"66d458c259c28209ec9b","resources_js_Shared_Frontend_Partials_Footer_vue":"61d408bdb7efd7eced17"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

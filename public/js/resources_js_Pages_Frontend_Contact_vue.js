@@ -105,6 +105,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -800,7 +803,9 @@ var render = function() {
                           ]),
                           _vm._v(" "),
                           _c("p", { staticClass: "subtitle-1" }, [
-                            _vm._v("Dhaka,Bangladesh-1200")
+                            _vm._v(
+                              "\n                            1309 Coffeen Avenue STE 1200 Sheridan, WY 82801\n                            USA\n                        "
+                            )
                           ])
                         ],
                         1
@@ -933,7 +938,7 @@ var render = function() {
                               },
                               [
                                 _vm._v(
-                                  "\n                            Submit\n                        "
+                                  "\n                                Submit\n                            "
                                 )
                               ]
                             )

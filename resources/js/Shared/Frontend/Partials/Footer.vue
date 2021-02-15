@@ -20,19 +20,18 @@
                 <v-col cols="12" md="3">
                     <h3>General</h3>
                     <ul class="pl-0">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><inertia-link href="/about">About</inertia-link></li>
+                        <li><inertia-link href="/service">Service</inertia-link></li>
+                        <li><inertia-link href="/features">Features</inertia-link></li>
+                        <li><inertia-link href="/contact">Contact Us</inertia-link></li>
                     </ul>
                 </v-col>
                 <v-col cols="12" md="3">
                     <h3>Legal</h3>
                     <ul class="pl-0">
-                        <li><a href="#">Licenses</a></li>
-                        <li><a href="$inertia.visit('privecy')">Privacy Policy</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><inertia-link href="/licenses">Licenses</inertia-link></li>
+                        <li><inertia-link href="/privecy">Privacy Policy</inertia-link></li>
+                        <li><inertia-link href="/terms">Terms of Service</inertia-link></li>
                     </ul>
                 </v-col>
             </v-row>

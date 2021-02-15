@@ -23,6 +23,14 @@ Route::get('/contact',function(){
     return Inertia::render('Frontend/Contact');
 });
 
+Route::get('/licenses',function(){
+    return Inertia::render('Frontend/Licenses');
+});
+
 Route::get('/privecy',function(){
     return Inertia::render('Frontend/Privecy');
+});
+
+Route::get('/terms',function(){
+    return Inertia::render('Frontend/Terms');
 });
