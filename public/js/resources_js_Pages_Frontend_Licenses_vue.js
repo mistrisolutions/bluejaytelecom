@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p{\n  width: 50%;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p {\n    width: 70%;\n}\n@media (min-width: 768px) {\n.parallax-overlay p {\n        width: 50%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -847,7 +847,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "p",
-              { staticClass: "caption text-sm-body-1 white--text mx-auto" },
+              { staticClass: "text-body-2 white--text text-center mx-auto" },
               [
                 _vm._v(
                   "\n                " +

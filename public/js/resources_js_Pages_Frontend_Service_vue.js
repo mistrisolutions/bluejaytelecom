@@ -137,32 +137,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -231,6 +205,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
 //
 //
 //
@@ -396,7 +374,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.we-do .v-sheet.v-card:hover {\n    box-shadow: none !important;\n    transition: 0.5s;\n    background-color: #e6e6e6 !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.we-do .v-sheet.v-card:hover {\n    box-shadow: none !important;\n    transition: 0.5s;\n    background-color: #e6e6e6 !important;\n}\n.we-do p.text-body-1{\n    word-spacing: -2px !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -420,7 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n.v-application .seemoreBtn a[data-v-b9bc2c0a] {\n    color: #ffffff!important;\n    text-decoration: none !important;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 500;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n.v-application .seemoreBtn a[data-v-b9bc2c0a] {\n    color: #ffffff !important;\n    text-decoration: none !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -444,7 +422,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p{\n  width: 50%;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p {\n    width: 70%;\n}\n@media (min-width: 768px) {\n.parallax-overlay p {\n        width: 50%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1262,20 +1240,13 @@ var render = function() {
                                     ]
                                   ),
                                   _vm._v(" "),
-                                  _c(
-                                    "p",
-                                    {
-                                      staticClass:
-                                        "text-caption text-md-overline"
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                                    " +
-                                          _vm._s(card.details) +
-                                          "\n                                "
-                                      )
-                                    ]
-                                  )
+                                  _c("p", { staticClass: "text-body-1" }, [
+                                    _vm._v(
+                                      "\n                                    " +
+                                        _vm._s(card.details) +
+                                        "\n                                "
+                                    )
+                                  ])
                                 ],
                                 1
                               )
@@ -1534,18 +1505,18 @@ var render = function() {
                                             ),
                                             _vm._v(" "),
                                             _c(
-                                              "h2",
+                                              "h3",
                                               {
                                                 staticClass:
-                                                  "font-weight-bold my-5 text-h6 text-sm-h5"
+                                                  "font-weight-bold my-5"
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                        " +
+                                                  "\n                                    " +
                                                     _vm._s(
                                                       service.service_name
                                                     ) +
-                                                    "\n                                    "
+                                                    "\n                                "
                                                 )
                                               ]
                                             )
@@ -1711,7 +1682,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "p",
-              { staticClass: "caption text-sm-body-1 white--text mx-auto" },
+              { staticClass: "text-body-2 white--text text-center mx-auto" },
               [
                 _vm._v(
                   "\n                " +

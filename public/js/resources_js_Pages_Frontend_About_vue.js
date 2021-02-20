@@ -146,6 +146,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -226,7 +249,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.statistics .v-card.v-sheet.theme--light{\n    z-index: 10;\n}\n.statistics .v-card {\n    background-color: #21607d ;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.statistics .v-card.v-sheet.theme--light {\n    z-index: 1;\n}\n.statistics .v-card {\n    background-color: #21607d;\n}\n.work .parallax-overlay p {\n    width: 100%;\n}\n@media (min-width: 992px) {\n.work .parallax-overlay p {\n        width: 70% !important;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -250,7 +273,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p{\n  width: 50%;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.parallax-overlay p {\n    width: 70%;\n}\n@media (min-width: 768px) {\n.parallax-overlay p {\n        width: 50%;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -961,9 +984,15 @@ var render = function() {
                           attrs: { cols: "12" }
                         },
                         [
-                          _c("h1", { staticClass: "section-title" }, [
-                            _vm._v("Our Statistic")
-                          ])
+                          _c(
+                            "h1",
+                            { staticClass: "section-title white--text" },
+                            [
+                              _vm._v(
+                                "\n                            Our Statistic\n                        "
+                              )
+                            ]
+                          )
                         ]
                       ),
                       _vm._v(" "),
@@ -973,7 +1002,6 @@ var render = function() {
                         [
                           _c(
                             "v-row",
-                            { staticClass: "text-center" },
                             _vm._l(_vm.status, function(item, i) {
                               return _c(
                                 "v-col",
@@ -997,15 +1025,31 @@ var render = function() {
                                       _c(
                                         "h1",
                                         {
-                                          staticClass: "mb-4 font-weight-bold"
+                                          staticClass:
+                                            "mb-4 font-weight-bold text-center"
                                         },
-                                        [_vm._v(_vm._s(item.count))]
+                                        [
+                                          _vm._v(
+                                            "\n                                        " +
+                                              _vm._s(item.count) +
+                                              "\n                                    "
+                                          )
+                                        ]
                                       ),
                                       _vm._v(" "),
                                       _c(
                                         "p",
-                                        { staticClass: "font-weight-bold" },
-                                        [_vm._v(_vm._s(item.title))]
+                                        {
+                                          staticClass:
+                                            "font-weight-bold text-center"
+                                        },
+                                        [
+                                          _vm._v(
+                                            "\n                                        " +
+                                              _vm._s(item.title) +
+                                              "\n                                    "
+                                          )
+                                        ]
                                       )
                                     ]
                                   )
@@ -1032,60 +1076,75 @@ var render = function() {
       ),
       _vm._v(" "),
       _c(
-        "v-parallax",
-        {
-          staticClass: "parallax-overlay py-16 cyan darken-3",
-          staticStyle: { "margin-top": "-80px" },
-          attrs: { src: "/assets/img/bg1.jpg" }
-        },
+        "div",
+        { staticClass: "work" },
         [
           _c(
-            "v-container",
+            "v-parallax",
+            {
+              staticClass: "parallax-overlay py-16 cyan darken-3",
+              staticStyle: { "margin-top": "-80px" },
+              attrs: { src: "/assets/img/bg1.jpg" }
+            },
             [
               _c(
-                "v-row",
-                { staticClass: "mt-16 py-16" },
+                "v-container",
                 [
                   _c(
-                    "v-col",
-                    { attrs: { cols: "12" } },
+                    "v-row",
+                    { staticClass: "mt-16 py-16" },
                     [
                       _c(
-                        "v-row",
-                        { staticClass: "d-flex align-center" },
+                        "v-col",
+                        { attrs: { cols: "12" } },
                         [
                           _c(
-                            "v-col",
-                            {
-                              staticClass: "text-center",
-                              attrs: { cols: "12" }
-                            },
+                            "v-row",
+                            { staticClass: "d-flex align-center" },
                             [
-                              _c("h1", { staticClass: "section-title" }, [
-                                _vm._v("Let's Work Together")
-                              ]),
-                              _vm._v(" "),
                               _c(
-                                "p",
+                                "v-col",
                                 {
-                                  staticClass:
-                                    "mt-4 mb-10 white--text w-50 mx-auto"
+                                  staticClass: "text-center",
+                                  attrs: { cols: "12" }
                                 },
                                 [
-                                  _vm._v(
-                                    "\n                                We are always active on WhatsApp and Mobile Call. Be connect with us and call us anything for your query. Drop us a form in contact section.\n                            "
+                                  _c(
+                                    "h1",
+                                    {
+                                      staticClass: "section-title white--text"
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                    Let's Work Together\n                                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "mt-4 mb-10 text-center white--text mx-auto"
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                                    We are always active on WhatsApp and\n                                    Mobile Call. Be connect with us and call\n                                    us anything for your query. Drop us a\n                                    form in contact section.\n                                "
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-btn",
+                                    {
+                                      staticClass:
+                                        "py-6 px-4 teal lighten-1 white--text title-1 font-weight-bold",
+                                      attrs: { outlined: "" }
+                                    },
+                                    [_vm._v("Get In Touch")]
                                   )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-btn",
-                                {
-                                  staticClass:
-                                    "py-6 px-4 teal lighten-1 title-1 font-weight-bold",
-                                  attrs: { outlined: "" }
-                                },
-                                [_vm._v("Get In Touch")]
+                                ],
+                                1
                               )
                             ],
                             1
@@ -1158,7 +1217,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "p",
-              { staticClass: "caption text-sm-body-1 white--text mx-auto" },
+              { staticClass: "text-body-2 white--text text-center mx-auto" },
               [
                 _vm._v(
                   "\n                " +

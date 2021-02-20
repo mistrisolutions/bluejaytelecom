@@ -1,12 +1,11 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap');
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 //Vuetify
 @import "~vuetify/dist/vuetify.min.css";
@@ -15,24 +14,42 @@
 @import "~@mdi/font/css/materialdesignicons.min.css";
 @import "~material-design-icons-iconfont/dist/material-design-icons.css";
 
-body{
-    color: #666;
-    font-family: "Open Sans",Arial,sans-serif !important;
-    font-weight: 700 !important;
+body {
+    color: #31456A ;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 300 !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.7em !important;
 }
-p{
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    line-height: 1.8em !important;
-    color: rgb(75, 74, 74);
+
+h1{
+    font-family: "Poppins", sans-serif;
 }
-.section-title{
-    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+
+h2{
+    text-align: justify;
+    letter-spacing: -1.5px !important;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: inherit;
+}
+
+p {
+    font-size: 15px;
+    color: #213150cf !important;
+    font-weight: 100;
+    line-height: 1.8em;
+    text-align: justify;
+    // letter-spacing: -0.5px;
+}
+.section-title {
+    color: #31456A !important;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.4em;
     text-align: center;
 }
@@ -43,4 +60,25 @@ p{
     top: 0;
     left: 0;
     position: absolute;
+}
+
+// Responsive
+/* Small -> ( sm ) */
+@media (min-width: 576px) {
+}
+
+/* Medium -> ( md ) */
+@media (min-width: 768px) {
+}
+
+/* Large -> ( lg ) */
+@media (min-width: 992px) {
+    p {
+        font-size: 17px !important;
+        font-weight: 200 !important;
+    }
+}
+
+/* Extra-large -> ( xl ) */
+@media (min-width: 1200px) {
 }

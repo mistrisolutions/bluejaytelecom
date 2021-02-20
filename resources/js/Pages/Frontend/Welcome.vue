@@ -6,8 +6,8 @@
         <div class="py-16">
             <v-container>
                 <v-row class="d-flex align-center justify-center">
-                    <v-col md="5">
-                        <h2 class="mb-6 text-h5 font-weight-bold">
+                    <v-col cols="12" sm="12" md="12" lg="5">
+                        <h2 class="mb-6">
                             About Bluejay Telecom
                         </h2>
                         <p>
@@ -27,7 +27,7 @@
                             flexible.
                         </p>
                     </v-col>
-                    <v-col md="7">
+                    <v-col cols="12" sm="12" md="12" lg="7">
                         <v-img src="assets/img/about.png"></v-img>
                     </v-col>
                 </v-row>
@@ -49,8 +49,8 @@
                             class="mx-auto my-10"
                         ></v-img>
                     </v-col>
-                    <v-col cols="12" md="6" class="pr-2 pr-md-16">
-                        <h2 class="mb-6 text-h5 font-weight-bold">
+                    <v-col cols="12" md="6" class="pr-md-16">
+                        <h2 class="mb-6 font-weight-bold">
                             What is VoIP?
                         </h2>
                         <p>
@@ -72,8 +72,8 @@
                             an unlimited number of calls.
                         </p>
                     </v-col>
-                    <v-col cols="12" md="6" class="pr-2 pr-md-16">
-                        <h2 class="mb-6 text-h5 font-weight-bold">
+                    <v-col cols="12" md="6" class="pr-md-16">
+                        <h2 class="mb-6 font-weight-bold">
                             What is VoIP?
                         </h2>
                         <p>

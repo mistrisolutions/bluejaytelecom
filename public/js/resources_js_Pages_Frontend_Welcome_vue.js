@@ -208,6 +208,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
     count: Number,
@@ -321,7 +325,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 600;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n.v-application .seemoreBtn a[data-v-b9bc2c0a] {\n    color: #ffffff!important;\n    text-decoration: none !important;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.v-list-item__title[data-v-b9bc2c0a],\n.v-list-item__subtitle[data-v-b9bc2c0a] {\n    white-space: pre-wrap;\n    line-height: 1.5;\n    font-weight: 500;\n    font-size: 0.95rem;\n}\n.theme--light.v-card[data-v-b9bc2c0a] {\n    transition: 0.3s;\n}\n.theme--light.v-card[data-v-b9bc2c0a]:hover {\n    background-color: rgba(246, 246, 246, 0.685);\n}\n.v-application .seemoreBtn a[data-v-b9bc2c0a] {\n    color: #ffffff !important;\n    text-decoration: none !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1045,23 +1049,27 @@ var render = function() {
                 "v-row",
                 { staticClass: "d-flex align-center justify-center" },
                 [
-                  _c("v-col", { attrs: { md: "5" } }, [
-                    _c("h2", { staticClass: "mb-6 text-h5 font-weight-bold" }, [
-                      _vm._v(
-                        "\n                        About Bluejay Telecom\n                    "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "\n                        Bluejay Telecom was founded by a group of business\n                        and telecommunication network professionals with\n                        years of industrial experience, incorporated in USA\n                        with national telecom operators and best VoIP\n                        companies around the world. Bluejay Telecom deliver\n                        the highest quality of telecommunications from\n                        voice, data, internet and mobile. We are committed\n                        to serve our customers with an uninterrupted and\n                        affordable VoIP service and utmost convenience. We\n                        have flexibility to offer innovative services to\n                        customers worldwide. We offer wholesale and retail\n                        voice termination all over the world with main focus\n                        in Asia. Our systems are modular, scalable and\n                        flexible.\n                    "
-                      )
-                    ])
-                  ]),
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", sm: "12", md: "12", lg: "5" } },
+                    [
+                      _c("h2", { staticClass: "mb-6" }, [
+                        _vm._v(
+                          "\n                        About Bluejay Telecom\n                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "\n                        Bluejay Telecom was founded by a group of business\n                        and telecommunication network professionals with\n                        years of industrial experience, incorporated in USA\n                        with national telecom operators and best VoIP\n                        companies around the world. Bluejay Telecom deliver\n                        the highest quality of telecommunications from\n                        voice, data, internet and mobile. We are committed\n                        to serve our customers with an uninterrupted and\n                        affordable VoIP service and utmost convenience. We\n                        have flexibility to offer innovative services to\n                        customers worldwide. We offer wholesale and retail\n                        voice termination all over the world with main focus\n                        in Asia. Our systems are modular, scalable and\n                        flexible.\n                    "
+                        )
+                      ])
+                    ]
+                  ),
                   _vm._v(" "),
                   _c(
                     "v-col",
-                    { attrs: { md: "7" } },
+                    { attrs: { cols: "12", sm: "12", md: "12", lg: "7" } },
                     [_c("v-img", { attrs: { src: "assets/img/about.png" } })],
                     1
                   )
@@ -1105,20 +1113,13 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "v-col",
-                    {
-                      staticClass: "pr-2 pr-md-16",
-                      attrs: { cols: "12", md: "6" }
-                    },
+                    { staticClass: "pr-md-16", attrs: { cols: "12", md: "6" } },
                     [
-                      _c(
-                        "h2",
-                        { staticClass: "mb-6 text-h5 font-weight-bold" },
-                        [
-                          _vm._v(
-                            "\n                        What is VoIP?\n                    "
-                          )
-                        ]
-                      ),
+                      _c("h2", { staticClass: "mb-6 font-weight-bold" }, [
+                        _vm._v(
+                          "\n                        What is VoIP?\n                    "
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -1142,20 +1143,13 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "v-col",
-                    {
-                      staticClass: "pr-2 pr-md-16",
-                      attrs: { cols: "12", md: "6" }
-                    },
+                    { staticClass: "pr-md-16", attrs: { cols: "12", md: "6" } },
                     [
-                      _c(
-                        "h2",
-                        { staticClass: "mb-6 text-h5 font-weight-bold" },
-                        [
-                          _vm._v(
-                            "\n                        What is VoIP?\n                    "
-                          )
-                        ]
-                      ),
+                      _c("h2", { staticClass: "mb-6 font-weight-bold" }, [
+                        _vm._v(
+                          "\n                        What is VoIP?\n                    "
+                        )
+                      ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
@@ -1271,18 +1265,18 @@ var render = function() {
                                             ),
                                             _vm._v(" "),
                                             _c(
-                                              "h2",
+                                              "h3",
                                               {
                                                 staticClass:
-                                                  "font-weight-bold my-5 text-h6 text-sm-h5"
+                                                  "font-weight-bold my-5"
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                        " +
+                                                  "\n                                    " +
                                                     _vm._s(
                                                       service.service_name
                                                     ) +
-                                                    "\n                                    "
+                                                    "\n                                "
                                                 )
                                               ]
                                             )

@@ -18,7 +18,7 @@
                                 mdi-map-marker-outline
                             </v-icon>
                             <h4 class="my-4 text-h5">Office-address</h4>
-                            <p class="subtitle-1">
+                            <p class="subtitle-1 text-center">
                                 1309 Coffeen Avenue STE 1200 Sheridan, WY 82801
                                 USA
                             </p>
@@ -30,8 +30,8 @@
                                 mdi-email-outline
                             </v-icon>
                             <h4 class="my-4 text-h5">Mail</h4>
-                            <p class="subtitle-1">sales@bluejaytelecom.com</p>
-                            <p class="subtitle-1">info@bluejaytelecom.com</p>
+                            <p class="subtitle-1 text-center">sales@bluejaytelecom.com</p>
+                            <p class="subtitle-1 text-center">info@bluejaytelecom.com</p>
                         </v-card>
                     </v-col>
                 </v-row>

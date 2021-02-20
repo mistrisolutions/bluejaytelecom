@@ -10,13 +10,13 @@
         />
         <!-- ./parallax -->
 
-        <div class="features">
+        <div class="features py-5 py-sm-0">
 
             <section class="features-section d-flex align-center">
                 <v-container>
                     <v-row>
                         <v-col cols="12" md="6" class="text-justify px-10">
-                            <h2>quality</h2>
+                            <h2>Quality</h2>
                             <p>
                                 Being a quality conscious organization,
                                 DeshiCall takes maximum care to maintain its

@@ -44,35 +44,9 @@
                                     >
                                         {{ card.title }}
                                     </h3>
-                                    <p class="text-caption text-md-overline">
+                                    <p class="text-body-1">
                                         {{ card.details }}
                                     </p>
-                                    <!-- <v-row class="text-center text-sm-left">
-                                        <v-col
-                                            cols="12"
-                                            sm="3"
-                                            elevation="5"
-                                            outlined
-                                        >
-                                            <v-icon
-                                                icon
-                                                size="60"
-                                                class="grey--text"
-                                            >
-                                                {{ card.icon }}
-                                            </v-icon>
-                                        </v-col>
-                                        <v-col cols="12" sm="9">
-                                            <h3
-                                                class="mb-3 cyan--text lighten-3 font-weight-bold"
-                                            >
-                                                {{ card.title }}
-                                            </h3>
-                                            <p>
-                                                {{ card.details }}
-                                            </p>
-                                        </v-col>
-                                    </v-row> -->
                                 </v-card>
                             </v-col>
                             <!-- ./single-item -->
@@ -229,5 +203,9 @@ export default {
     box-shadow: none !important;
     transition: 0.5s;
     background-color: #e6e6e6 !important;
+}
+
+.we-do p.text-body-1{
+    word-spacing: -2px !important;
 }
 </style>

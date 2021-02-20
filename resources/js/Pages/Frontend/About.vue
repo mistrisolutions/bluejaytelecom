@@ -4,7 +4,8 @@
             :header="{
                 bg: '/assets/img/bg4.jpg',
                 title: 'About Us',
-                desc: 'Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. '
+                desc:
+                    'Bluejay Telecom delivers the highest quality of telecommunications from voice, data, internet and mobile. '
             }"
         />
         <!-- ./parallax -->
@@ -76,17 +77,15 @@
 
         <div class="statistics">
             <v-container>
-                <v-card
-                    elevation="5"
-                    class="py-10 px-10"
-                    rounded
-                >
+                <v-card elevation="5" class="py-10 px-10" rounded>
                     <v-row>
                         <v-col cols="12" class="text-center mb-5 white--text">
-                            <h1 class="section-title">Our Statistic</h1>
+                            <h1 class="section-title white--text">
+                                Our Statistic
+                            </h1>
                         </v-col>
                         <v-col cols="12">
-                            <v-row class="text-center">
+                            <v-row>
                                 <v-col
                                     cols="12"
                                     sm="6"
@@ -94,9 +93,21 @@
                                     v-for="(item, i) in status"
                                     :key="i"
                                 >
-                                    <v-card class="py-10" color="white" height="100%" elevation="0" rounded>
-                                        <h1 class="mb-4 font-weight-bold">{{ item.count }}</h1>
-                                        <p class="font-weight-bold">{{ item.title }}</p>
+                                    <v-card
+                                        class="py-10"
+                                        color="white"
+                                        height="100%"
+                                        elevation="0"
+                                        rounded
+                                    >
+                                        <h1
+                                            class="mb-4 font-weight-bold text-center"
+                                        >
+                                            {{ item.count }}
+                                        </h1>
+                                        <p class="font-weight-bold text-center">
+                                            {{ item.title }}
+                                        </p>
                                     </v-card>
                                 </v-col>
                             </v-row>
@@ -106,28 +117,40 @@
             </v-container>
         </div>
         <!-- ./statistics -->
-
-        <v-parallax src="/assets/img/bg1.jpg" class="parallax-overlay py-16 cyan darken-3" style="margin-top:-80px">
-            <v-container>
-                <v-row class="mt-16 py-16">
-                    <v-col cols="12">
-                        <v-row class="d-flex align-center">
-                            <v-col cols="12" class="text-center">
-                                <h1 class="section-title">Let's Work Together</h1>
-                                <p class="mt-4 mb-10 white--text w-50 mx-auto">
-                                    We are always active on WhatsApp and Mobile Call. Be connect with us and call us anything for your query. Drop us a form in contact section.
-                                </p>
-                                <v-btn
-                                    class="py-6 px-4 teal lighten-1 title-1 font-weight-bold"
-                                    outlined
-                                    >Get In Touch</v-btn
-                                >
-                            </v-col>
-                        </v-row>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </v-parallax>
+        <div class="work">
+            <v-parallax
+                src="/assets/img/bg1.jpg"
+                class="parallax-overlay py-16 cyan darken-3"
+                style="margin-top:-80px"
+            >
+                <v-container>
+                    <v-row class="mt-16 py-16">
+                        <v-col cols="12">
+                            <v-row class="d-flex align-center">
+                                <v-col cols="12" class="text-center">
+                                    <h1 class="section-title white--text">
+                                        Let's Work Together
+                                    </h1>
+                                    <p
+                                        class="mt-4 mb-10 text-center white--text mx-auto"
+                                    >
+                                        We are always active on WhatsApp and
+                                        Mobile Call. Be connect with us and call
+                                        us anything for your query. Drop us a
+                                        form in contact section.
+                                    </p>
+                                    <v-btn
+                                        class="py-6 px-4 teal lighten-1 white--text title-1 font-weight-bold"
+                                        outlined
+                                        >Get In Touch</v-btn
+                                    >
+                                </v-col>
+                            </v-row>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-parallax>
+        </div>
         <!-- ./work-together -->
     </section>
 </template>
@@ -153,11 +176,20 @@ export default {
 </script>
 
 <style>
-.statistics .v-card.v-sheet.theme--light{
-    z-index: 10;
+.statistics .v-card.v-sheet.theme--light {
+    z-index: 1;
 }
 .statistics .v-card {
-    background-color: #21607d ;
+    background-color: #21607d;
 }
 
+.work .parallax-overlay p {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .work .parallax-overlay p {
+        width: 70% !important;
+    }
+}
 </style>

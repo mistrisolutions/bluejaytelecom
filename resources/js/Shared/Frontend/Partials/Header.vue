@@ -5,7 +5,12 @@
                 <v-row class="d-flex align-center">
                     <v-toolbar-title>
                         <inertia-link href="/">
-                            <img class="img-fluid" style="height:50px" src="assets/logo.svg" alt="">
+                            <img
+                                class="img-fluid"
+                                style="height:50px"
+                                src="assets/logo.svg"
+                                alt=""
+                            />
                         </inertia-link>
                     </v-toolbar-title>
 
@@ -24,7 +29,7 @@
                         @blur="searchClosed = true"
                         v-model="search"
                         class="ml-2 expanding-search d-none d-sm-block"
-                        :class="{ 'closed' : searchClosed && !search}"
+                        :class="{ closed: searchClosed && !search }"
                         placeholder="Searech"
                         prepend-inner-icon="mdi-magnify"
                         filled
@@ -41,15 +46,34 @@
         </v-app-bar>
 
         <!-- Mobile view -->
-        <v-navigation-drawer v-model="drawer" absolute top temporary>
+        <v-navigation-drawer v-model="drawer" fixed top temporary>
+            <v-app-bar color="primary">
+                <v-toolbar-title>
+                    <inertia-link href="/">
+                        <img
+                            class="img-fluid"
+                            style="height:30px"
+                            src="assets/logo.svg"
+                            alt=""
+                        />
+                    </inertia-link>
+                </v-toolbar-title>
+            </v-app-bar>
+
             <v-list nav dense>
                 <v-list-item-group
                     v-model="group"
                     active-class="cyan--text text--accent-4"
                 >
-                    <v-list-item v-for="(item , i ) in items" :key="i" @click="changeLink(item.link)">
+                    <v-list-item
+                        v-for="(item, i) in items"
+                        :key="i"
+                        @click="changeLink(item.link)"
+                    >
                         <v-list-item-content>
-                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            <v-list-item-title>{{
+                                item.title
+                            }}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
                 </v-list-item-group>
@@ -110,10 +134,10 @@ export default {
 }
 .header .theme--light.v-btn .v-btn__content {
     color: #fff !important;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
 }
-.expanding-search{
+.expanding-search {
     transition: 0.5s ease-in-out;
 }
 .expanding-search .v-input__slot {
@@ -127,7 +151,7 @@ export default {
 .expanding-search .v-input__prepend-inner {
     margin-left: -10px;
 }
-.expanding-search .v-input__prepend-inner i{
+.expanding-search .v-input__prepend-inner i {
     color: white !important;
 }
 .expanding-search .v-text-field__details {
@@ -136,18 +160,15 @@ export default {
 .expanding-search {
     max-width: 300px;
 }
-.expanding-search.closed{
-  max-width: 45px;
+.expanding-search.closed {
+    max-width: 45px;
 }
-@media (max-width:1100px) {
-.expanding-search {
-    max-width: 200px;
+@media (max-width: 1100px) {
+    .expanding-search {
+        max-width: 200px;
+    }
+    header .v-btn {
+        padding: 0 5px !important;
+    }
 }
-header .v-btn{
-    padding: 0 5px !important;
-}
-}
-
-
-
 </style>

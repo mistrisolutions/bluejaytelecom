@@ -28,9 +28,9 @@
                                     <v-icon size="80" class="primary--text">
                                         {{ service.icon }}
                                     </v-icon>
-                                        <h2 class="font-weight-bold my-5 text-h6 text-sm-h5">
-                                            {{ service.service_name }}
-                                        </h2>
+                                    <h3 class="font-weight-bold my-5">
+                                        {{ service.service_name }}
+                                    </h3>
                                 </v-list-item-content>
                             </v-list-item>
                             <div class="px-5">
@@ -59,7 +59,11 @@
                     </v-hover>
                 </v-col>
                 <v-col cols="12" class="text-center mt-5" v-if="btn">
-                    <v-btn class="secondary button seemoreBtn"><inertia-link href="/service">See more</inertia-link></v-btn>
+                    <v-btn class="secondary button seemoreBtn"
+                        ><inertia-link href="/service"
+                            >See more</inertia-link
+                        ></v-btn
+                    >
                 </v-col>
             </v-row>
             <!-- ./HOVER -->
@@ -147,9 +151,10 @@ export default {
 .v-list-item__subtitle {
     white-space: pre-wrap;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.95rem;
 }
+
 .theme--light.v-card {
     transition: 0.3s;
 }
@@ -158,7 +163,7 @@ export default {
 }
 
 .v-application .seemoreBtn a {
-    color: #ffffff!important;
+    color: #ffffff !important;
     text-decoration: none !important;
 }
 

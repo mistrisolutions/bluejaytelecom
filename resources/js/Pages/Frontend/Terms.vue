@@ -253,12 +253,17 @@ export default {
 };
 </script>
 <style scoped>
-.terms p,
 .terms li {
-    font-size: 17px !important;
-    font-weight: 500 !important;
+    font-weight: 200 !important;
+    color: #2b3444;
+    font-size: initial;
 }
 h3{
     margin: 50px 0 20px 0;
 }
+
+h5 {
+    color: #000000a8;
+} 
+
 </style>
