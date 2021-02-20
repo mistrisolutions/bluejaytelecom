@@ -95,6 +95,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -151,7 +155,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header .v-app-bar {\n    /* background-color: #06415d !important; */\n    color: #fff !important;\n}\n.header .theme--light.v-btn .v-btn__content {\n    color: #fff !important;\n    font-size: 14px;\n    font-weight: 600;\n}\n.expanding-search {\n    transition: 0.5s ease-in-out;\n}\n.expanding-search .v-input__slot {\n    margin-bottom: 0 !important;\n    cursor: pointer !important;\n}\n.expanding-search .v-input__slot:before,\n.expanding-search .v-input__slot:after {\n    border-color: transparent !important;\n}\n.expanding-search .v-input__prepend-inner {\n    margin-left: -10px;\n}\n.expanding-search .v-input__prepend-inner i {\n    color: white !important;\n}\n.expanding-search .v-text-field__details {\n    display: none;\n}\n.expanding-search {\n    max-width: 300px;\n}\n.expanding-search.closed {\n    max-width: 45px;\n}\n@media (max-width: 1100px) {\n.expanding-search {\n        max-width: 200px;\n}\nheader .v-btn {\n        padding: 0 5px !important;\n}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header .v-app-bar {\n    /* background-color: #06415d !important; */\n    color: #fff !important;\n}\n.header .theme--light.v-btn .v-btn__content {\n    color: #fff !important;\n    font-size: 14px;\n    font-weight: 600;\n}\n.header .nav-icon {\n    height: 50px;\n    width: 50px;\n    background: #032546 !important;\n    color: #fff !important;\n    z-index: 1000;\n}\n.expanding-search {\n    transition: 0.5s ease-in-out;\n}\n.expanding-search .v-input__slot {\n    margin-bottom: 0 !important;\n    cursor: pointer !important;\n}\n.expanding-search .v-input__slot:before,\n.expanding-search .v-input__slot:after {\n    border-color: transparent !important;\n}\n.expanding-search .v-input__prepend-inner {\n    margin-left: -10px;\n}\n.expanding-search .v-input__prepend-inner i {\n    color: white !important;\n}\n.expanding-search .v-text-field__details {\n    display: none;\n}\n.expanding-search {\n    max-width: 300px;\n}\n.expanding-search.closed {\n    max-width: 45px;\n}\n@media (max-width: 1100px) {\n.expanding-search {\n        max-width: 200px;\n}\nheader .v-btn {\n        padding: 0 5px !important;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -726,16 +730,6 @@ var render = function() {
                       },
                       expression: "search"
                     }
-                  }),
-                  _vm._v(" "),
-                  _c("v-app-bar-nav-icon", {
-                    staticClass: "d-block d-md-none",
-                    on: {
-                      click: function($event) {
-                        $event.stopPropagation()
-                        _vm.drawer = !_vm.drawer
-                      }
-                    }
                   })
                 ],
                 2
@@ -746,6 +740,17 @@ var render = function() {
         ],
         1
       ),
+      _vm._v(" "),
+      _c("v-app-bar-nav-icon", {
+        staticClass: "d-block d-md-none nav-icon",
+        attrs: { fixed: "", right: "", bottom: "" },
+        on: {
+          click: function($event) {
+            $event.stopPropagation()
+            _vm.drawer = !_vm.drawer
+          }
+        }
+      }),
       _vm._v(" "),
       _c(
         "v-navigation-drawer",

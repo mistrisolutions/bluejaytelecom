@@ -13,7 +13,7 @@ import { InertiaProgress } from '@inertiajs/progress'
 //plugins
 InertiaProgress.init()
 
-Vue.use(plugin)
+Vue.use(plugin);
 
 //global components
 Vue.component('frontend-layout', () => import('@/Shared/Frontend/Layout'));

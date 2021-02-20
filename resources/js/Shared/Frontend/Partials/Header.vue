@@ -37,13 +37,17 @@
                         clearable
                         dense
                     ></v-text-field>
-                    <v-app-bar-nav-icon
-                        @click.stop="drawer = !drawer"
-                        class="d-block d-md-none"
-                    ></v-app-bar-nav-icon>
                 </v-row>
             </v-container>
         </v-app-bar>
+
+        <v-app-bar-nav-icon
+            @click.stop="drawer = !drawer"
+            class="d-block d-md-none nav-icon"
+            fixed
+            right
+            bottom
+        ></v-app-bar-nav-icon>
 
         <!-- Mobile view -->
         <v-navigation-drawer v-model="drawer" fixed top temporary>
@@ -136,6 +140,13 @@ export default {
     color: #fff !important;
     font-size: 14px;
     font-weight: 600;
+}
+.header .nav-icon {
+    height: 50px;
+    width: 50px;
+    background: #032546 !important;
+    color: #fff !important;
+    z-index: 1000;
 }
 .expanding-search {
     transition: 0.5s ease-in-out;

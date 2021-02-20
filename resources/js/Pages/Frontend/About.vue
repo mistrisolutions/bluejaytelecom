@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section transition="scale-transition">
         <Parallax
             :header="{
                 bg: '/assets/img/bg4.jpg',
@@ -14,7 +14,9 @@
             <v-container>
                 <v-row>
                     <v-col cols="12" class="text-center">
-                        <h1 class="mb-10 section-title">Company Profile</h1>
+                        <h1 class="mb-10 section-title">
+                            Company Profile
+                        </h1>
                     </v-col>
                     <v-col>
                         <p>
@@ -77,7 +79,7 @@
 
         <div class="statistics">
             <v-container>
-                <v-card elevation="5" class="py-10 px-10" rounded>
+                <v-card elevation="5" class="pa-10 pa-sm-5 pa-md-10" rounded>
                     <v-row>
                         <v-col cols="12" class="text-center mb-5 white--text">
                             <h1 class="section-title white--text">
@@ -101,9 +103,9 @@
                                         rounded
                                     >
                                         <h1
-                                            class="mb-4 font-weight-bold text-center"
+                                            class="mb-4 font-weight-bold text-center cyan--text text--darken-3"
                                         >
-                                            {{ item.count }}
+                                            <Counter :end="item.count" />
                                         </h1>
                                         <p class="font-weight-bold text-center">
                                             {{ item.title }}
@@ -157,25 +159,28 @@
 
 <script>
 import Parallax from "../../components/Parallax_Header";
+import Counter from "@/components/Counter";
 export default {
     layout: `frontend-layout`,
     components: {
-        Parallax
+        Parallax,
+        Counter
     },
     data() {
         return {
             status: [
-                { count: 100, title: "Happy Clients" },
-                { count: 150, title: "Completed Projects" },
-                { count: 30, title: "Web Projects" },
-                { count: 50, title: "Team Members" }
-            ]
+                { count: 50, title: "Happy Clients" },
+                { count: 100, title: "Completed Projects" },
+                { count: 90, title: "Web Projects" },
+                { count: 30, title: "Team Members" }
+            ],
         };
-    }
+    },
 };
 </script>
 
 <style>
+
 .statistics .v-card.v-sheet.theme--light {
     z-index: 1;
 }
@@ -186,6 +191,44 @@ export default {
 .work .parallax-overlay p {
     width: 100%;
 }
+
+/* start */
+#wrapper {
+    width: 150px;
+    display: inline-block;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.18);
+}
+input {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+.btn {
+    outline: none;
+    cursor: pointer;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #7b68ee;
+    box-shadow: 0 3px 8px 0 rgba(65, 105, 225, 0.18);
+    display: inline-block;
+    border: 0;
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: all 0.1s ease-in;
+    margin: 15px;
+}
+.green {
+    background-color: mediumseagreen !important;
+}
+.blue {
+    background-color: royalblue !important;
+}
+/* end */
 
 @media (min-width: 992px) {
     .work .parallax-overlay p {
