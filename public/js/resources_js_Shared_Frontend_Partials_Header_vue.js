@@ -99,6 +99,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -127,6 +136,9 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     changeLink: function changeLink(link) {
       this.$inertia.visit(link);
+    },
+    drawerToggle: function drawerToggle() {
+      this.drawer = !this.drawer;
     }
   },
   watch: {
@@ -741,21 +753,34 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("v-app-bar-nav-icon", {
-        staticClass: "d-block d-md-none nav-icon",
-        attrs: { fixed: "", right: "", bottom: "" },
-        on: {
-          click: function($event) {
-            $event.stopPropagation()
-            _vm.drawer = !_vm.drawer
+      _c(
+        "v-app-bar-nav-icon",
+        {
+          staticClass: "d-block d-md-none nav-icon",
+          attrs: { fixed: "", right: "", bottom: "" },
+          on: {
+            click: function($event) {
+              $event.stopPropagation()
+              return _vm.drawerToggle()
+            }
           }
-        }
-      }),
+        },
+        [
+          _c("v-icon", [_vm._v(_vm._s(this.drawer ? "mdi-close" : "mdi-menu"))])
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
         "v-navigation-drawer",
         {
-          attrs: { fixed: "", top: "", temporary: "" },
+          attrs: {
+            fixed: "",
+            bottom: "",
+            temporary: "",
+            height: "auto",
+            align: "center"
+          },
           model: {
             value: _vm.drawer,
             callback: function($$v) {
@@ -765,27 +790,6 @@ var render = function() {
           }
         },
         [
-          _c(
-            "v-app-bar",
-            { attrs: { color: "primary" } },
-            [
-              _c(
-                "v-toolbar-title",
-                [
-                  _c("inertia-link", { attrs: { href: "/" } }, [
-                    _c("img", {
-                      staticClass: "img-fluid",
-                      staticStyle: { height: "30px" },
-                      attrs: { src: "assets/logo.svg", alt: "" }
-                    })
-                  ])
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
           _c(
             "v-list",
             { attrs: { nav: "", dense: "" } },

@@ -42,16 +42,25 @@
         </v-app-bar>
 
         <v-app-bar-nav-icon
-            @click.stop="drawer = !drawer"
+            @click.stop="drawerToggle()"
             class="d-block d-md-none nav-icon"
             fixed
             right
             bottom
-        ></v-app-bar-nav-icon>
+        >
+            <v-icon>{{this.drawer?'mdi-close':'mdi-menu'}}</v-icon>
+        </v-app-bar-nav-icon>
 
         <!-- Mobile view -->
-        <v-navigation-drawer v-model="drawer" fixed top temporary>
-            <v-app-bar color="primary">
+        <v-navigation-drawer
+            v-model="drawer"
+            fixed
+            bottom
+            temporary
+            height="auto"
+            align="center"
+        >
+            <!-- <v-app-bar color="primary">
                 <v-toolbar-title>
                     <inertia-link href="/">
                         <img
@@ -62,7 +71,7 @@
                         />
                     </inertia-link>
                 </v-toolbar-title>
-            </v-app-bar>
+            </v-app-bar> -->
 
             <v-list nav dense>
                 <v-list-item-group
@@ -121,7 +130,11 @@ export default {
     methods: {
         changeLink(link) {
             this.$inertia.visit(link);
+        },
+        drawerToggle(){
+            this.drawer=!this.drawer
         }
+        
     },
     watch: {
         group() {
