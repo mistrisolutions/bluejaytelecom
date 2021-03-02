@@ -8,13 +8,17 @@
                         <v-btn
                             v-for="icon in icons"
                             :key="icon"
-                            class="mr-2 my-5 pa-6 pa-md-8 white--text"
-                            icon
+                            class="mr-2 my-5 pa-2 white--text"
+                            color="cyan"
+                            fab
+                            small
                         >
-                            <v-icon size="35px">
+                            <v-icon size="25px">
                                 {{ icon }}
                             </v-icon>
                         </v-btn>
+
+                        <p class="white--text pr-md-10">Bluejay Telecom was founded by a group of business and telecommunication network professionals with years of industrial experience, incorporated in USA.</p>
                     </div>
                 </v-col>
                 <v-col cols="12" md="3">

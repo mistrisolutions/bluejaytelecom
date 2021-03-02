@@ -30,15 +30,15 @@ export default {
             ],
             slides: [
                 {
-                    img: "assets/img/slider1.jpg",
+                    img: "assets/img/slider2.jpg",
                     title: "We're going big for small."
                 },
                 {
-                    img: "assets/img/slider2.jpg",
+                    img: "assets/img/slider3.jpg",
                     title: "And we’re not stopping there."
                 },
                 {
-                    img: "assets/img/slider3.jpg",
+                    img: "assets/img/slider1.jpg",
                     title: "More ways we’ve helped businesses like yours."
                 }
             ]

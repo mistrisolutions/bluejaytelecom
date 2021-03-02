@@ -293,13 +293,13 @@ __webpack_require__.r(__webpack_exports__);
     return {
       colors: ["light-blue lighten-3", "teal lighten-3", "light-blue accent-2"],
       slides: [{
-        img: "assets/img/slider1.jpg",
+        img: "assets/img/slider2.jpg",
         title: "We're going big for small."
       }, {
-        img: "assets/img/slider2.jpg",
+        img: "assets/img/slider3.jpg",
         title: "And we’re not stopping there."
       }, {
-        img: "assets/img/slider3.jpg",
+        img: "assets/img/slider1.jpg",
         title: "More ways we’ve helped businesses like yours."
       }]
     };

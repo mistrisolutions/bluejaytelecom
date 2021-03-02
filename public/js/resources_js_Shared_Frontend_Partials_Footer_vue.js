@@ -59,6 +59,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -604,11 +608,11 @@ var render = function() {
                         "v-btn",
                         {
                           key: icon,
-                          staticClass: "mr-2 my-5 pa-6 pa-md-8 white--text",
-                          attrs: { icon: "" }
+                          staticClass: "mr-2 my-5 pa-2 white--text",
+                          attrs: { color: "cyan", fab: "", small: "" }
                         },
                         [
-                          _c("v-icon", { attrs: { size: "35px" } }, [
+                          _c("v-icon", { attrs: { size: "25px" } }, [
                             _vm._v(
                               "\n                            " +
                                 _vm._s(icon) +
@@ -618,7 +622,13 @@ var render = function() {
                         ],
                         1
                       )
-                    })
+                    }),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "white--text pr-md-10" }, [
+                      _vm._v(
+                        "Bluejay Telecom was founded by a group of business and telecommunication network professionals with years of industrial experience, incorporated in USA."
+                      )
+                    ])
                   ],
                   2
                 )
