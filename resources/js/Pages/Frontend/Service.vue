@@ -57,13 +57,13 @@
         </div>
         <!-- ./what-we-do -->
 
-        <div class="py-16 grey lighten-3">
+       <!-- <div class="py-16 grey lighten-3">
             <v-container>
                 <v-row>
                     <v-col cols="12" class="text-center">
                         <h1 class="mb-10 section-title">Client Testimonial</h1>
                     </v-col>
-                    <!-- ./title-col -->
+                    
                     <v-col cols="12">
                         <v-row>
                             <v-col
@@ -117,7 +117,7 @@
                     </v-col>
                 </v-row>
             </v-container>
-        </div>
+        </div>-->
         <!-- ./testimonials -->
     </section>
 </template>
