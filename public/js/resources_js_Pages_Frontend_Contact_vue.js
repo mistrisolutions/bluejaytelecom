@@ -96,6 +96,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+<<<<<<< HEAD
+=======
+//
+>>>>>>> 1ad9c2bc14d36a6f45077e525a5026f9cd89afe3
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -547,8 +551,9 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-row",
-                { staticClass: "mb-10" },
+                { staticClass: "mb-8" },
                 [
+<<<<<<< HEAD
                   _c("v-col", { attrs: { cols: "12", md: "6" } }, [
                     _c(
                       "div",
@@ -616,6 +621,79 @@ var render = function() {
                       1
                     )
                   ])
+=======
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", md: "6", "offset-md": "3" } },
+                    [
+                      _c(
+                        "div",
+                        [
+                          _c("v-text-field", {
+                            staticClass: "mb-5",
+                            attrs: {
+                              label: "Your name (required)",
+                              rules: _vm.rules,
+                              "hide-details": "auto",
+                              outlined: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-text-field", {
+                            staticClass: "mb-5",
+                            attrs: {
+                              label: "Your email (required)",
+                              rules: _vm.rules,
+                              "hide-details": "auto",
+                              outlined: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-text-field", {
+                            staticClass: "mb-5",
+                            attrs: {
+                              label: "Subject",
+                              rules: _vm.rules,
+                              "hide-details": "auto",
+                              outlined: ""
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("v-textarea", {
+                            attrs: {
+                              label: "Message",
+                              "auto-grow": "",
+                              outlined: "",
+                              rows: "1",
+                              "row-height": "100"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { staticClass: "mx-auto d-flex justify-center" },
+                            [
+                              _c(
+                                "v-btn",
+                                {
+                                  staticClass: "white--text text-button",
+                                  attrs: { color: "teal darken-4" }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                                Submit\n                            "
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ]
+                  )
+>>>>>>> 1ad9c2bc14d36a6f45077e525a5026f9cd89afe3
                 ],
                 1
               )
