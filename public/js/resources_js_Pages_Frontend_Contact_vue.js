@@ -96,10 +96,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-<<<<<<< HEAD
-=======
 //
->>>>>>> 1ad9c2bc14d36a6f45077e525a5026f9cd89afe3
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   layout: "frontend-layout",
@@ -111,8 +125,51 @@ __webpack_require__.r(__webpack_exports__);
       rules: [function (value) {
         return !!value || "Please fill the input..";
       } // value => (value && value.length >= 3) || "Please fill the input."
-      ]
+      ],
+      form: {
+        name: null,
+        email: null,
+        subject: null,
+        message: null
+      }
     };
+  },
+  methods: {
+    makeFormData: function makeFormData() {
+      var _this = this;
+
+      var formData = new FormData();
+      Object.keys(this.form).forEach(function (key) {
+        if (_this.form[key] == null) {
+          formData.append(key, "");
+        } else {
+          formData.append(key, _this.form[key]);
+        }
+      });
+      return formData;
+    },
+    // makeFormData
+    resetForm: function resetForm() {
+      var _this2 = this;
+
+      Object.keys(this.form).forEach(function (key) {
+        _this2.form[key] = null;
+      });
+    },
+    submit: function submit() {
+      var _this3 = this;
+
+      this.loading = true;
+      this.$inertia.post(this.route("contact.store"), this.makeFormData(), {
+        replace: true,
+        preserveScroll: true,
+        preserveState: true
+      }).then(function () {
+        if (_this3.$page.props.success) {
+          _this3.resetForm();
+        }
+      });
+    }
   }
 });
 
@@ -553,79 +610,25 @@ var render = function() {
                 "v-row",
                 { staticClass: "mb-8" },
                 [
-<<<<<<< HEAD
-                  _c("v-col", { attrs: { cols: "12", md: "6" } }, [
-                    _c(
-                      "div",
-                      [
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Your name (required)",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Your email (required)",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-text-field", {
-                          staticClass: "mb-5",
-                          attrs: {
-                            label: "Subject",
-                            rules: _vm.rules,
-                            "hide-details": "auto",
-                            outlined: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("v-textarea", {
-                          attrs: {
-                            label: "Message",
-                            "auto-grow": "",
-                            outlined: "",
-                            rows: "1",
-                            "row-height": "100"
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "mx-auto d-flex justify-center" },
-                          [
-                            _c(
-                              "v-btn",
-                              {
-                                staticClass: "white--text text-button",
-                                attrs: { color: "teal darken-4" }
-                              },
-                              [
-                                _vm._v(
-                                  "\n                                Submit\n                            "
-                                )
-                              ]
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ])
-=======
+                  _vm._v(">\n                "),
                   _c(
                     "v-col",
                     { attrs: { cols: "12", md: "6", "offset-md": "3" } },
                     [
+                      _vm.$page.props.success
+                        ? _c(
+                            "v-alert",
+                            { attrs: { dense: "", text: "", type: "success" } },
+                            [
+                              _vm._v(
+                                "\n                        " +
+                                  _vm._s(_vm.$page.props.success) +
+                                  "\n                    "
+                              )
+                            ]
+                          )
+                        : _vm._e(),
+                      _vm._v(" "),
                       _c(
                         "div",
                         [
@@ -633,9 +636,17 @@ var render = function() {
                             staticClass: "mb-5",
                             attrs: {
                               label: "Your name (required)",
-                              rules: _vm.rules,
+                              error: !!_vm.$page.props.errors.name,
+                              "error-messages": _vm.$page.props.errors.name,
                               "hide-details": "auto",
                               outlined: ""
+                            },
+                            model: {
+                              value: _vm.form.name,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "name", $$v)
+                              },
+                              expression: "form.name"
                             }
                           }),
                           _vm._v(" "),
@@ -643,9 +654,17 @@ var render = function() {
                             staticClass: "mb-5",
                             attrs: {
                               label: "Your email (required)",
-                              rules: _vm.rules,
+                              error: !!_vm.$page.props.errors.email,
+                              "error-messages": _vm.$page.props.errors.email,
                               "hide-details": "auto",
                               outlined: ""
+                            },
+                            model: {
+                              value: _vm.form.email,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "email", $$v)
+                              },
+                              expression: "form.email"
                             }
                           }),
                           _vm._v(" "),
@@ -653,19 +672,36 @@ var render = function() {
                             staticClass: "mb-5",
                             attrs: {
                               label: "Subject",
-                              rules: _vm.rules,
+                              error: !!_vm.$page.props.errors.subject,
+                              "error-messages": _vm.$page.props.errors.subject,
                               "hide-details": "auto",
                               outlined: ""
+                            },
+                            model: {
+                              value: _vm.form.subject,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "subject", $$v)
+                              },
+                              expression: "form.subject"
                             }
                           }),
                           _vm._v(" "),
                           _c("v-textarea", {
                             attrs: {
                               label: "Message",
+                              error: !!_vm.$page.props.errors.message,
+                              "error-messages": _vm.$page.props.errors.messaage,
                               "auto-grow": "",
                               outlined: "",
                               rows: "1",
                               "row-height": "100"
+                            },
+                            model: {
+                              value: _vm.form.message,
+                              callback: function($$v) {
+                                _vm.$set(_vm.form, "message", $$v)
+                              },
+                              expression: "form.message"
                             }
                           }),
                           _vm._v(" "),
@@ -677,7 +713,12 @@ var render = function() {
                                 "v-btn",
                                 {
                                   staticClass: "white--text text-button",
-                                  attrs: { color: "teal darken-4" }
+                                  attrs: { color: "teal darken-4" },
+                                  on: {
+                                    click: function($event) {
+                                      return _vm.submit()
+                                    }
+                                  }
                                 },
                                 [
                                   _vm._v(
@@ -691,9 +732,9 @@ var render = function() {
                         ],
                         1
                       )
-                    ]
+                    ],
+                    1
                   )
->>>>>>> 1ad9c2bc14d36a6f45077e525a5026f9cd89afe3
                 ],
                 1
               )

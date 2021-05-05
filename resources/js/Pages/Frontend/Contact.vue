@@ -35,33 +35,49 @@
                         </v-card>
                     </v-col>
                 </v-row>
-                <v-row class="mb-8">
-                
+                <v-row class="mb-8">>
                     <v-col cols="12" md="6" offset-md="3">
+                        <v-alert
+                            dense
+                            text
+                            type="success"
+                            v-if="$page.props.success"
+                        >
+                            {{$page.props.success}}
+                        </v-alert>
                         <div>
                             <v-text-field
                                 label="Your name (required)"
-                                :rules="rules"
+                                v-model="form.name"
+                                :error="!!$page.props.errors.name"
+                                :error-messages="$page.props.errors.name"
                                 hide-details="auto"
                                 outlined
                                 class="mb-5"
                             ></v-text-field>
                             <v-text-field
                                 label="Your email (required)"
-                                :rules="rules"
+                                v-model="form.email"
+                                :error="!!$page.props.errors.email"
+                                :error-messages="$page.props.errors.email"
                                 hide-details="auto"
                                 outlined
                                 class="mb-5"
                             ></v-text-field>
                             <v-text-field
                                 label="Subject"
-                                :rules="rules"
+                                v-model="form.subject"
+                                :error="!!$page.props.errors.subject"
+                                :error-messages="$page.props.errors.subject"
                                 hide-details="auto"
                                 outlined
                                 class="mb-5"
                             ></v-text-field>
                             <v-textarea
                                 label="Message"
+                                v-model="form.message"
+                                :error="!!$page.props.errors.message"
+                                :error-messages="$page.props.errors.messaage"
                                 auto-grow
                                 outlined
                                 rows="1"
@@ -71,6 +87,7 @@
                                 <v-btn
                                     class="white--text text-button"
                                     color="teal darken-4"
+                                    @click="submit()"
                                 >
                                     Submit
                                 </v-btn>
@@ -95,8 +112,49 @@ export default {
             rules: [
                 value => !!value || "Please fill the input.."
                 // value => (value && value.length >= 3) || "Please fill the input."
-            ]
+            ],
+            form:{
+                name:null,
+                email:null,
+                subject:null,
+                message:null,
+            }
         };
+    },
+
+    methods:{
+        makeFormData() {
+            const formData = new FormData();
+            Object.keys(this.form).forEach((key) => {
+                if (this.form[key] == null) {
+                    formData.append(key, "");
+                } else {
+                    formData.append(key, this.form[key]);
+                }
+            });
+            return formData;
+        }, // makeFormData
+
+        resetForm(){
+            Object.keys(this.form).forEach(key=>{
+                this.form[key]=null
+            })
+        },
+
+        submit() {
+            this.loading = true;
+            this.$inertia
+                .post(this.route("contact.store"), this.makeFormData(), {
+                replace: true,
+                preserveScroll: true,
+                preserveState: true,
+                })
+            .then(() =>{
+               if(this.$page.props.success){
+                   this.resetForm()
+               }
+            });
+        },
     }
 };
 </script>

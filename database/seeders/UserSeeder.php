@@ -1,0 +1,26 @@
+<?php
+
+namespace Database\Seeders;
+
+
+use App\Models\user;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
+class UserSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        User::updateOrCreate(['email'=>'admin@mail.com'],
+        [
+            'name'=>"Admin",
+            'email'=>'admin@mail.com',
+            'password'=>Hash::make('password')
+        ]);
+    }
+}
