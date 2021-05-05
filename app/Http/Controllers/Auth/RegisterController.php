@@ -57,6 +57,14 @@ class RegisterController extends Controller
     }
 
     /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function showRegistrationForm()
+    {
+        return view('auth.login');
+    }
+
+    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data

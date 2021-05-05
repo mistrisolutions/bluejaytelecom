@@ -14,6 +14,8 @@ import { InertiaProgress } from '@inertiajs/progress'
 InertiaProgress.init()
 
 Vue.use(plugin);
+//ziggy route global
+Vue.mixin({methods: {route: window.route}})
 
 //global components
 Vue.component('frontend-layout', () => import('@/Shared/Frontend/Layout'));
