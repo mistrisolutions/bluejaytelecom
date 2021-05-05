@@ -40,7 +40,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                           
+
                         @else
                             <li class="nav-item dropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
